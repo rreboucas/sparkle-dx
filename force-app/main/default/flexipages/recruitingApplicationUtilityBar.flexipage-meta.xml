@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is the utility bar for the recruiting application and includes an example Report Chart</description>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>displayfieldapiname</name>
+                <value>testautonumdata__Full_Name__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter1_fieldValue</name>
+                <value>Yes</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter1_fieldapiname</name>
+                <value>testautonumdata__HasTwitterID__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>height</name>
+                <type>decorator</type>
+                <value>320</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>icon</name>
+                <type>decorator</type>
+                <value>search</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <type>decorator</type>
+                <value>Candidate Search</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>objectApiName</name>
+                <value>testautonumdata__Candidate__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>scrollable</name>
+                <type>decorator</type>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>width</name>
+                <type>decorator</type>
+                <value>425</value>
+            </componentInstanceProperties>
+            <componentName>DynamicSearch</componentName>
+        </componentInstances>
+        <name>utilityItems</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Recruiting App Utility Bar</masterLabel>
+    <template>
+        <name>one:utilityBarTemplateDesktop</name>
+    </template>
+    <type>UtilityBar</type>
+</FlexiPage>

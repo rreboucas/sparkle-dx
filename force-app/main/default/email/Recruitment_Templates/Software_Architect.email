@@ -1,0 +1,10 @@
+Offer Letter
+
+Dear {!Candidate__c.Name}, 
+
+I am excited to extend you an offer for our {!Position__c.Name} position.  Your Annual salary will be U$ {!Offer__c.Annual_Salary_Offered_Amount__c}. You will also be eligible for an annual bonus of U$ {!Offer__c.Annual_Bonus_Amount__c} which is dependent on individual and company annual performance.
+
+Please feel free to reach out to me in case you have any questions.
+
+Thanks, 
+{!User.Name}
