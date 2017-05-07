@@ -1,10 +1,11 @@
 {
-  "Company": "root Company",
+  "Company": "Sparkle DX Pilot Scratch Org",
   "Country": "US",
-  "LastName": "root",
-  "Email": "root@example.com",
+  "LastName": "Reboucas",
+  "Email": "rreboucas@salesforce.com",
   "Edition": "Developer",
   "OrgPreferences" : {
+    "ChatterEnabled": true,
     "S1DesktopEnabled" : true
   }
 }
