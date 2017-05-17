@@ -14,7 +14,7 @@
     <logoUrl>https://rodrigocanvas.herokuapp.com/logo.png</logoUrl>
     <oauthConfig>
         <callbackUrl>https://rodrigocanvas.herokuapp.com/callback</callbackUrl>
-        <consumerKey>3MVG9SemV5D80oBc_ahqiC3tiBe050elBSEF0nMZHIHPbRfFbmQBFTLF9VWuCvE8xWnwVQzrcnp7rpyDOyys4</consumerKey>
+        <consumerKey></consumerKey>
         <scopes>Basic</scopes>
         <scopes>Chatter</scopes>
     </oauthConfig>

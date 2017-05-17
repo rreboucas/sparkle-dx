@@ -56,10 +56,10 @@
       </thead>
       <tbody>
         <tr >
-          <td class="col-sm-1">{!Interviewer__c.testautonumdata__Candidate__c}</td>
-          <td class="col-sm-1">{!Interviewer__c.testautonumdata__Position_Name__c}</td>
-          <td class="col-sm-1">{!Interviewer__c.testautonumdata__Interview_Type__c}</td>
-          <td class="col-sm-1">{!Interviewer__c.testautonumdata__Interviewer__r.Name}</td>
+          <td class="col-sm-1">{!Interviewer__c.Candidate__c}</td>
+          <td class="col-sm-1">{!Interviewer__c.Position_Name__c}</td>
+          <td class="col-sm-1">{!Interviewer__c.Interview_Type__c}</td>
+          <td class="col-sm-1">{!Interviewer__c.Interviewer__r.Name}</td>
         </tr>
       </tbody>
     </table>
@@ -91,7 +91,7 @@
         </thead>
         <tbody>
 		<apex:variable value="{!1}" var="i"/>
-        <apex:repeat var="answers" value="{!Interviewer__c.testautonumdata__Interview_Answers__r}">
+        <apex:repeat var="answers" value="{!Interviewer__c.Interview_Answers__r}">
         <tr style="background-color:{!IF(mod(i,2)==0, '#EBEBE6', 'white')}; height: 64px; ">
 
             <td class="col-sm-4"><div ><apex:outputText style="font-style:italic" value="{!i}.  {!answers.Question__c}"/></div></td>

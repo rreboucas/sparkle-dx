@@ -139,21 +139,21 @@ public with sharing class ReferralsServerController {
         // CRUD / FLS Check - Create a map with the object names and fields for CRUD\FLS check
         mapObjectsFields = new Map<String, Set<String>>(); 
         
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Referral__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('OwnerId', 'testautonumdata__Referral__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Referral_Message__c', 'testautonumdata__Referral__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('createddate', 'testautonumdata__Referral__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Candidate__c', 'testautonumdata__Referral__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Referral__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('OwnerId', 'Referral__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Referral_Message__c', 'Referral__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('createddate', 'Referral__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Candidate__c', 'Referral__c', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('Name', 'User', mapObjectsFields);
         
-        List<testautonumdata__Referral__c > referralsList = null;
+        List<Referral__c > referralsList = null;
 
             if (Sparkle_Helper.UserHasAccessToObjectsAndFields(mapObjectsFields))
             {  
 
-                referralsList = [SELECT Id,OwnerId, Owner.Name,testautonumdata__Referral_Message__c, createddate 
-                                                                 FROM testautonumdata__Referral__c
-                                                                 where testautonumdata__Candidate__c =: recordId
+                referralsList = [SELECT Id,OwnerId, Owner.Name,Referral_Message__c, createddate 
+                                                                 FROM Referral__c
+                                                                 where Candidate__c =: recordId
                                                                  limit: rLimit ];
                 
                 
@@ -161,7 +161,7 @@ public with sharing class ReferralsServerController {
                 if (referralsList.size() > 0)
                 {
                     System.debug('referralsList.size()'+ referralsList.size());
-                    for (testautonumdata__Referral__c e: referralsList)
+                    for (Referral__c e: referralsList)
                     {
                         
                         ReferralsServerController i = new ReferralsServerController();
@@ -178,7 +178,7 @@ public with sharing class ReferralsServerController {
                         
                         i.OwnerID = e.OwnerId;
                         
-                        i.ReferralMessage = e.testautonumdata__Referral_Message__c;
+                        i.ReferralMessage = e.Referral_Message__c;
                         
                         i.ReferralDate = e.createddate.format();
                         

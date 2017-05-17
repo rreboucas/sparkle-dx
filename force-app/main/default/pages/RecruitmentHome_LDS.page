@@ -173,7 +173,7 @@
                         <apex:repeat var="position" value="{!UpcomingPositions}">
                         <tr class="slds-hint-parent">
                             <td class="slds-size--1-of-3" data-label="Position"><a href="/{!position.id}">{!position.Name}</a></td>
-                            <td class="slds-size--1-of-3" data-label="Hiring Manager"><a href="/{!position.Hiring_Manager__c}">{!position.testautonumdata__Hiring_Manager__r.Name}</a></td>
+                            <td class="slds-size--1-of-3" data-label="Hiring Manager"><a href="/{!position.Hiring_Manager__c}">{!position.Hiring_Manager__r.Name}</a></td>
                           <td class="slds-size--1-of-3" data-label="Expiration">
                               <apex:outputText value="{0,date,yyyy.MM.dd}"> <apex:param value="{!position.Fullfilment_Date_Limit__c}" /> </apex:outputText>
                               
@@ -238,7 +238,7 @@
                         <tr class="slds-hint-parent">
                           <td class="slds-size--1-of-3" data-label="Record"><a href="/{!interview.id}">{!interview.name}</a></td>
                             <td class="slds-size--1-of-3" data-label="Type">{!interview.Interview_Type__c}</td>
-                            <td class="slds-size--1-of-3" data-label="Candidate"><a href="/{!interview.Candidate__c}">{!interview.testautonumdata__Candidate__r.Name}</a></td>
+                            <td class="slds-size--1-of-3" data-label="Candidate"><a href="/{!interview.Candidate__c}">{!interview.Candidate__r.Name}</a></td>
                           <td>
                             <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
                               <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">

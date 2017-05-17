@@ -36,12 +36,12 @@ public with sharing class OfferLetterCompController {
         // CRUD / FLS Check - Create a map with the object names and fields for CRUD\FLS check - 
         mapObjectsFields = new Map<String, Set<String>>(); 
         
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('Name', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__E_mail__c', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Position__c', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Position__r.testautonumdata__Level__c', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Position__r.Name', 'testautonumdata__Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Name', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('E_mail__c', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Position__c', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Position__r.Level__c', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Position__r.Name', 'Candidate__c', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('FolderId', 'EmailTemplate', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('Id', 'EmailTemplate', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('IsActive', 'EmailTemplate', mapObjectsFields);
@@ -56,22 +56,22 @@ public with sharing class OfferLetterCompController {
             
             // Grab Position level from associated Position record
              
-            String soql2 = 'SELECT Id,Name,testautonumdata__E_mail__c,testautonumdata__Position__r.Name,testautonumdata__Position__r.testautonumdata__Level__c FROM testautonumdata__Candidate__c where id = ' +'\'' +  candidateID +'\' limit 1' ;
+            String soql2 = 'SELECT Id,Name,E_mail__c,Position__r.Name,Position__r.Level__c FROM Candidate__c where id = ' +'\'' +  candidateID +'\' limit 1' ;
                 
             System.debug('######## soql2: ' + soql2);
-            testautonumdata__Candidate__c candidateRec = Database.query(soql2);
+            Candidate__c candidateRec = Database.query(soql2);
             System.debug('######## candidateRec: ' + candidateRec);
             
-            String positionLevel = candidateRec.testautonumdata__Position__r.testautonumdata__Level__c;
+            String positionLevel = candidateRec.Position__r.Level__c;
             System.debug('######## positionLevel: ' + positionLevel);
             
             String cName = candidateRec.Name;
             System.debug('######## cName: ' + cName);
             
-            String cEmail = candidateRec.testautonumdata__E_mail__c;
+            String cEmail = candidateRec.E_mail__c;
             System.debug('######## cEmail: ' + cEmail);
             
-            String posName = candidateRec.testautonumdata__Position__r.Name;
+            String posName = candidateRec.Position__r.Name;
             System.debug('######## posName: ' + posName);
             
             String soql = 'SELECT FolderId,Id,IsActive,Name,NamespacePrefix,Subject FROM EmailTemplate where Folder.Name ='+'\'' + 'Recruitment Templates' +'\'' + 
@@ -127,9 +127,9 @@ public with sharing class OfferLetterCompController {
         // CRUD / FLS Check - Create a map with the object names and fields for CRUD\FLS check
         mapObjectsFields = new Map<String, Set<String>>(); 
         
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Position__c', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Offer__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Position__c', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Offer__c', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('Body', 'EmailTemplate', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('FolderId', 'EmailTemplate', mapObjectsFields);
         Sparkle_Helper.AddFieldToObjectsMap('HtmlValue', 'EmailTemplate', mapObjectsFields);
@@ -154,11 +154,11 @@ public with sharing class OfferLetterCompController {
             
             // Grab PositionId from Candidate record:
            
-            String soql2 = 'SELECT Id,testautonumdata__Position__c FROM testautonumdata__Candidate__c where id = ' +'\'' +  candidateID +'\' limit 1' ;
+            String soql2 = 'SELECT Id,Position__c FROM Candidate__c where id = ' +'\'' +  candidateID +'\' limit 1' ;
                 
             System.debug('######## soql2: ' + soql2);
             
-            testautonumdata__Candidate__c candidateRec = Database.query(soql2);
+            Candidate__c candidateRec = Database.query(soql2);
             System.debug('######## candidateRec: ' + candidateRec);
 
             for (EmailTemplate e: lstQueriedRecords)
@@ -172,13 +172,13 @@ public with sharing class OfferLetterCompController {
                 {                
                     i.emailTemplateName = Sparkle_Helper.GetSobjectField(e, 'Name');
                     String tmpSubjectMergeFields = Sparkle_Helper.GetSobjectField(e, 'Subject');
-                    tmpSubjectMergeFields = TemplateResolver.positionFields(tmpSubjectMergeFields, candidateRec.testautonumdata__Position__c);
+                    tmpSubjectMergeFields = TemplateResolver.positionFields(tmpSubjectMergeFields, candidateRec.Position__c);
                     System.debug('######## tmpSubjectMergeFields: ' + tmpSubjectMergeFields);
                     i.emailTemplateSubject = tmpSubjectMergeFields;
                     
                     String tmpBodyMergeFields = Sparkle_Helper.GetSobjectField(e, 'Body');
                     tmpBodyMergeFields = TemplateResolver.candidateFields(tmpBodyMergeFields, candidateID);
-                    tmpBodyMergeFields = TemplateResolver.positionFields(tmpBodyMergeFields, candidateRec.testautonumdata__Position__c);
+                    tmpBodyMergeFields = TemplateResolver.positionFields(tmpBodyMergeFields, candidateRec.Position__c);
                     tmpBodyMergeFields = TemplateResolver.offerFields(tmpBodyMergeFields, offerID);
                     tmpBodyMergeFields = TemplateResolver.userFields(tmpBodyMergeFields, UserInfo.getUserId());
                     System.debug('######## tmpBodyMergeFields: ' + tmpBodyMergeFields);
@@ -211,19 +211,19 @@ public with sharing class OfferLetterCompController {
         // CRUD / FLS Check - Create a map with the object names and fields for CRUD\FLS check
         mapObjectsFields = new Map<String, Set<String>>(); 
         
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Candidate__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('Id', 'testautonumdata__Offer__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Annual_Salary_Offered_Amount__c', 'testautonumdata__Offer__c', mapObjectsFields);
-        Sparkle_Helper.AddFieldToObjectsMap('testautonumdata__Annual_Bonus_Amount__c', 'testautonumdata__Offer__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Candidate__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Id', 'Offer__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Annual_Salary_Offered_Amount__c', 'Offer__c', mapObjectsFields);
+        Sparkle_Helper.AddFieldToObjectsMap('Annual_Bonus_Amount__c', 'Offer__c', mapObjectsFields);
 
         
         // CRUD\FLS Check: Before DML check if the user who is invoking this method has access to the Object and to the fields requested 
         
         if (Sparkle_Helper.UserHasAccessToObjectsAndFields(mapObjectsFields))
         {
-        	testautonumdata__Offer__c rec = new testautonumdata__Offer__c(testautonumdata__Candidate__c = candidateID, 
-                                                                          testautonumdata__Annual_Salary_Offered_Amount__c = annualSalary, 
-                                                                          testautonumdata__Annual_Bonus_Amount__c  = annualBonus);
+        	Offer__c rec = new Offer__c(Candidate__c = candidateID, 
+                                                                          Annual_Salary_Offered_Amount__c = annualSalary, 
+                                                                          Annual_Bonus_Amount__c  = annualBonus);
             if (String.isEmpty(offerId))
             {
                 System.debug('######## Insert a new Offer record ');

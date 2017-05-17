@@ -1,12 +1,12 @@
 public with sharing class myControllerExtension {
 
-    private final testautonumdata__Interviewer__c interviewer;
+    private final Interviewer__c interviewer;
     
     // The extension constructor initializes the private member
     // variable acct by using the getRecord method from the standard
     // controller.
     public myControllerExtension(ApexPages.StandardController stdController) {
-        this.interviewer = (testautonumdata__Interviewer__c)stdController.getRecord();
+        this.interviewer = (Interviewer__c)stdController.getRecord();
     }
 
     public String getGreeting() {

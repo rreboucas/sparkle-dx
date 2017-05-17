@@ -2,7 +2,7 @@
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldOverrides>
         <field>Description</field>
-        <formula>&quot;Participants: &quot; &amp;  testautonumdata__Candidate__c.Name  &amp; &quot; and &quot; &amp;  $User.FirstName  &amp; &quot; &quot; &amp;  $User.LastName</formula>
+        <formula>&quot;Participants: &quot; &amp;  Candidate__c.Name  &amp; &quot; and &quot; &amp;  $User.FirstName  &amp; &quot; &quot; &amp;  $User.LastName</formula>
     </fieldOverrides>
     <fieldOverrides>
         <field>Priority</field>
@@ -22,7 +22,7 @@
     </fieldOverrides>
     <fieldOverrides>
         <field>WhatId</field>
-        <formula>testautonumdata__Candidate__c.Id</formula>
+        <formula>Candidate__c.Id</formula>
     </fieldOverrides>
     <label>Log Video Call</label>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>

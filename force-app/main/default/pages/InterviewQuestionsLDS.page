@@ -80,7 +80,7 @@
           <td class="slds-size--1-of-4">{!Interviewer__c.Candidate__c}</td>
           <td class="slds-size--1-of-4">{!Interviewer__c.Position_Name__c}</td>
           <td class="slds-size--1-of-4">{!Interviewer__c.Interview_Type__c}</td>
-          <td class="slds-size--1-of-4">{!Interviewer__c.testautonumdata__Interviewer__r.Name}</td>
+          <td class="slds-size--1-of-4">{!Interviewer__c.Interviewer__r.Name}</td>
         </tr>
       </tbody>
     </table>
@@ -117,7 +117,7 @@
         </thead>
         <tbody>
         <apex:variable value="{!1}" var="i"/>
-        <apex:repeat var="answers" value="{!Interviewer__c.testautonumdata__Interview_Answers__r}">
+        <apex:repeat var="answers" value="{!Interviewer__c.Interview_Answers__r}">
         <tr class="slds-hint-parent">
 
             <td><div style="display:table-cell;float: left; display: inline; width: 265px; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap;word-wrap: break-word; ">{!i}.  {!answers.Question__c}</div></td>

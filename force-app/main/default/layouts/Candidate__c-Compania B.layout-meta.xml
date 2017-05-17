@@ -135,12 +135,12 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>testautonumdata__Candidate__c.Create_Tech_Interview</actionName>
+            <actionName>Candidate__c.Create_Tech_Interview</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>testautonumdata__Candidate__c.Send_Offer_LC_Action</actionName>
+            <actionName>Candidate__c.Send_Offer_LC_Action</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
         </platformActionListItems>
@@ -167,7 +167,7 @@
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
-            <quickActionName>testautonumdata__Candidate__c.Log_Video_Call</quickActionName>
+            <quickActionName>Candidate__c.Log_Video_Call</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <relatedLists>

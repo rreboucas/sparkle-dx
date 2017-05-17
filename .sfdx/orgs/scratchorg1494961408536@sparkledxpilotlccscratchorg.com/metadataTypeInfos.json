@@ -1,0 +1,1329 @@
+{
+    "sourceApiVersion": "39.0",
+    "typeDefs": {
+        "InstalledPackage": {
+            "metadataName": "InstalledPackage",
+            "ext": "installedPackage",
+            "hasContent": false,
+            "defaultDirectory": "installedPackages",
+            "nameForMsgs": "Installed Package",
+            "nameForMsgsPlural": "Installed Packages",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomLabels": {
+            "metadataName": "CustomLabels",
+            "ext": "labels",
+            "hasContent": false,
+            "defaultDirectory": "labels",
+            "nameForMsgs": "Custom Label",
+            "nameForMsgsPlural": "Custom Labels",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "CustomLabel"
+            ]
+        },
+        "StaticResource": {
+            "metadataName": "StaticResource",
+            "ext": "resource",
+            "hasContent": true,
+            "defaultDirectory": "staticresources",
+            "nameForMsgs": "Static Resource",
+            "nameForMsgsPlural": "Static Resources",
+            "contentIsBinary": true,
+            "hasDecompositions": false
+        },
+        "Scontrol": {
+            "metadataName": "Scontrol",
+            "ext": "scf",
+            "hasContent": true,
+            "defaultDirectory": "scontrols",
+            "nameForMsgs": "Scontrol",
+            "nameForMsgsPlural": "Scontrols",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Certificate": {
+            "metadataName": "Certificate",
+            "ext": "crt",
+            "hasContent": true,
+            "defaultDirectory": "certs",
+            "nameForMsgs": "Certificate",
+            "nameForMsgsPlural": "Certificates",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "AuraDefinitionBundle": {
+            "metadataName": "AuraDefinitionBundle",
+            "ext": "aurabundle",
+            "hasContent": true,
+            "defaultDirectory": "aura",
+            "nameForMsgs": "Lightning Component Bundle",
+            "nameForMsgsPlural": "Lightning Component Bundles",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApexComponent": {
+            "metadataName": "ApexComponent",
+            "ext": "component",
+            "hasContent": true,
+            "defaultDirectory": "components",
+            "nameForMsgs": "Visualforce Component",
+            "nameForMsgsPlural": "Visualforce Components",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApexPage": {
+            "metadataName": "ApexPage",
+            "ext": "page",
+            "hasContent": true,
+            "defaultDirectory": "pages",
+            "nameForMsgs": "Visualforce Page",
+            "nameForMsgsPlural": "Visualforce Pages",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Queue": {
+            "metadataName": "Queue",
+            "ext": "queue",
+            "hasContent": false,
+            "defaultDirectory": "queues",
+            "nameForMsgs": "Queue",
+            "nameForMsgsPlural": "Queues",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomDataType": {
+            "metadataName": "CustomDataType",
+            "ext": "datatype",
+            "hasContent": false,
+            "defaultDirectory": "datatypes",
+            "nameForMsgs": "Custom Data Type",
+            "nameForMsgsPlural": "Custom Data Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ExternalDataSource": {
+            "metadataName": "ExternalDataSource",
+            "ext": "dataSource",
+            "hasContent": false,
+            "defaultDirectory": "dataSources",
+            "nameForMsgs": "External Data Source",
+            "nameForMsgsPlural": "External Data Sources",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "NamedCredential": {
+            "metadataName": "NamedCredential",
+            "ext": "namedCredential",
+            "hasContent": false,
+            "defaultDirectory": "namedCredentials",
+            "nameForMsgs": "Named Credential",
+            "nameForMsgsPlural": "Named Credentials",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ExternalServiceRegistration": {
+            "metadataName": "ExternalServiceRegistration",
+            "ext": "externalServiceRegistration",
+            "hasContent": false,
+            "defaultDirectory": "externalServiceRegistrations",
+            "nameForMsgs": "External Service Registration",
+            "nameForMsgsPlural": "External Service Registrations",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Role": {
+            "metadataName": "Role",
+            "ext": "role",
+            "hasContent": false,
+            "defaultDirectory": "roles",
+            "nameForMsgs": "Role",
+            "nameForMsgsPlural": "Roles",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Territory": {
+            "metadataName": "Territory",
+            "ext": "territory",
+            "hasContent": false,
+            "defaultDirectory": "territories",
+            "nameForMsgs": "Territory",
+            "nameForMsgsPlural": "Territorys",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Group": {
+            "metadataName": "Group",
+            "ext": "group",
+            "hasContent": false,
+            "defaultDirectory": "groups",
+            "nameForMsgs": "Group",
+            "nameForMsgsPlural": "Groups",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "UiPlugin": {
+            "metadataName": "UiPlugin",
+            "ext": "uiplugin",
+            "hasContent": true,
+            "defaultDirectory": "uiplugins",
+            "nameForMsgs": "Ui Plugin",
+            "nameForMsgsPlural": "Ui Plugins",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "GlobalValueSet": {
+            "metadataName": "GlobalValueSet",
+            "ext": "globalValueSet",
+            "hasContent": false,
+            "defaultDirectory": "globalValueSets",
+            "nameForMsgs": "Global Value Set",
+            "nameForMsgsPlural": "Global Value Sets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "GlobalPicklist": {
+            "metadataName": "GlobalPicklist",
+            "ext": "globalPicklist",
+            "hasContent": false,
+            "defaultDirectory": "globalPicklists",
+            "nameForMsgs": "Global Picklist",
+            "nameForMsgsPlural": "Global Picklists",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "StandardValueSet": {
+            "metadataName": "StandardValueSet",
+            "ext": "standardValueSet",
+            "hasContent": false,
+            "defaultDirectory": "standardValueSets",
+            "nameForMsgs": "Standard Value Set",
+            "nameForMsgsPlural": "Standard Value Sets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomPermission": {
+            "metadataName": "CustomPermission",
+            "ext": "customPermission",
+            "hasContent": false,
+            "defaultDirectory": "customPermissions",
+            "nameForMsgs": "Custom Permission",
+            "nameForMsgsPlural": "Custom Permissions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomObject": {
+            "metadataName": "CustomObject",
+            "ext": "object",
+            "hasContent": false,
+            "defaultDirectory": "objects",
+            "nameForMsgs": "Custom Object",
+            "nameForMsgsPlural": "Custom Objects",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "CustomField",
+                "BusinessProcess",
+                "CompactLayout",
+                "RecordType",
+                "WebLink",
+                "ValidationRule",
+                "SharingReason",
+                "ListView",
+                "FieldSet"
+            ]
+        },
+        "ReportType": {
+            "metadataName": "ReportType",
+            "ext": "reportType",
+            "hasContent": false,
+            "defaultDirectory": "reportTypes",
+            "nameForMsgs": "Report Type",
+            "nameForMsgsPlural": "Report Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Report": {
+            "metadataName": "Report",
+            "ext": "report",
+            "hasContent": false,
+            "defaultDirectory": "reports",
+            "nameForMsgs": "Report",
+            "nameForMsgsPlural": "Reports",
+            "contentIsBinary": true,
+            "hasDecompositions": false,
+            "inFolder": true,
+            "folderTypeDef": {
+                "metadataName": "ReportFolder",
+                "ext": "reportFolder",
+                "hasContent": false,
+                "defaultDirectory": "reports",
+                "nameForMsgs": "Report Folder",
+                "nameForMsgsPlural": "Report Folders",
+                "contentIsBinary": false
+            }
+        },
+        "ReportFolder": {
+            "metadataName": "ReportFolder",
+            "ext": "reportFolder",
+            "hasContent": false,
+            "defaultDirectory": "reports",
+            "nameForMsgs": "Report Folder",
+            "nameForMsgsPlural": "Report Folders",
+            "contentIsBinary": false
+        },
+        "Dashboard": {
+            "metadataName": "Dashboard",
+            "ext": "dashboard",
+            "hasContent": false,
+            "defaultDirectory": "dashboards",
+            "nameForMsgs": "Dashboard",
+            "nameForMsgsPlural": "Dashboards",
+            "contentIsBinary": true,
+            "hasDecompositions": false,
+            "inFolder": true,
+            "folderTypeDef": {
+                "metadataName": "DashboardFolder",
+                "ext": "dashboardFolder",
+                "hasContent": false,
+                "defaultDirectory": "dashboards",
+                "nameForMsgs": "Dashboard Folder",
+                "nameForMsgsPlural": "Dashboard Folders",
+                "contentIsBinary": false
+            }
+        },
+        "DashboardFolder": {
+            "metadataName": "DashboardFolder",
+            "ext": "dashboardFolder",
+            "hasContent": false,
+            "defaultDirectory": "dashboards",
+            "nameForMsgs": "Dashboard Folder",
+            "nameForMsgsPlural": "Dashboard Folders",
+            "contentIsBinary": false
+        },
+        "VisualizationPlugin": {
+            "metadataName": "VisualizationPlugin",
+            "ext": "visualizationPlugin",
+            "hasContent": false,
+            "defaultDirectory": "visualizationPlugins",
+            "nameForMsgs": "Visualization Plugin",
+            "nameForMsgsPlural": "Visualization Plugins",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "AnalyticSnapshot": {
+            "metadataName": "AnalyticSnapshot",
+            "ext": "snapshot",
+            "hasContent": false,
+            "defaultDirectory": "analyticSnapshots",
+            "nameForMsgs": "Analytic Snapshot",
+            "nameForMsgsPlural": "Analytic Snapshots",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomFeedFilter": {
+            "metadataName": "CustomFeedFilter",
+            "ext": "feedFilter",
+            "hasContent": false,
+            "defaultDirectory": "feedFilters",
+            "nameForMsgs": "Custom Feed Filter",
+            "nameForMsgsPlural": "Custom Feed Filters",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Layout": {
+            "metadataName": "Layout",
+            "ext": "layout",
+            "hasContent": false,
+            "defaultDirectory": "layouts",
+            "nameForMsgs": "Layout",
+            "nameForMsgsPlural": "Layouts",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Document": {
+            "metadataName": "Document",
+            "ext": "document",
+            "hasContent": true,
+            "defaultDirectory": "documents",
+            "nameForMsgs": "Document",
+            "nameForMsgsPlural": "Documents",
+            "contentIsBinary": true,
+            "hasDecompositions": false,
+            "inFolder": true,
+            "folderTypeDef": {
+                "metadataName": "DocumentFolder",
+                "ext": "documentFolder",
+                "hasContent": false,
+                "defaultDirectory": "documents",
+                "nameForMsgs": "Document Folder",
+                "nameForMsgsPlural": "Document Folders",
+                "contentIsBinary": false
+            }
+        },
+        "DocumentFolder": {
+            "metadataName": "DocumentFolder",
+            "ext": "documentFolder",
+            "hasContent": false,
+            "defaultDirectory": "documents",
+            "nameForMsgs": "Document Folder",
+            "nameForMsgsPlural": "Document Folders",
+            "contentIsBinary": false
+        },
+        "CustomPageWebLink": {
+            "metadataName": "CustomPageWebLink",
+            "ext": "custompageweblink",
+            "hasContent": false,
+            "defaultDirectory": "weblinks",
+            "nameForMsgs": "Custom Page Web Link",
+            "nameForMsgsPlural": "Custom Page Web Links",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Letterhead": {
+            "metadataName": "Letterhead",
+            "ext": "letter",
+            "hasContent": false,
+            "defaultDirectory": "letterhead",
+            "nameForMsgs": "Letterhead",
+            "nameForMsgsPlural": "Letterheads",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EmailTemplate": {
+            "metadataName": "EmailTemplate",
+            "ext": "email",
+            "hasContent": true,
+            "defaultDirectory": "email",
+            "nameForMsgs": "Email Template",
+            "nameForMsgsPlural": "Email Templates",
+            "contentIsBinary": true,
+            "hasDecompositions": false,
+            "inFolder": true,
+            "folderTypeDef": {
+                "metadataName": "EmailFolder",
+                "ext": "emailFolder",
+                "hasContent": false,
+                "defaultDirectory": "email",
+                "nameForMsgs": "Email Template Folder",
+                "nameForMsgsPlural": "Email Template Folders",
+                "contentIsBinary": false
+            }
+        },
+        "EmailFolder": {
+            "metadataName": "EmailFolder",
+            "ext": "emailFolder",
+            "hasContent": false,
+            "defaultDirectory": "email",
+            "nameForMsgs": "Email Template Folder",
+            "nameForMsgsPlural": "Email Template Folders",
+            "contentIsBinary": false
+        },
+        "QuickAction": {
+            "metadataName": "QuickAction",
+            "ext": "quickAction",
+            "hasContent": false,
+            "defaultDirectory": "quickActions",
+            "nameForMsgs": "Quick Action",
+            "nameForMsgsPlural": "Quick Actions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "FlexiPage": {
+            "metadataName": "FlexiPage",
+            "ext": "flexipage",
+            "hasContent": false,
+            "defaultDirectory": "flexipages",
+            "nameForMsgs": "Flexi Page",
+            "nameForMsgsPlural": "Flexi Pages",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomTab": {
+            "metadataName": "CustomTab",
+            "ext": "tab",
+            "hasContent": false,
+            "defaultDirectory": "tabs",
+            "nameForMsgs": "Custom Tab",
+            "nameForMsgsPlural": "Custom Tabs",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomApplicationComponent": {
+            "metadataName": "CustomApplicationComponent",
+            "ext": "customApplicationComponent",
+            "hasContent": false,
+            "defaultDirectory": "customApplicationComponents",
+            "nameForMsgs": "Custom Application Component",
+            "nameForMsgsPlural": "Custom Application Components",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomApplication": {
+            "metadataName": "CustomApplication",
+            "ext": "app",
+            "hasContent": false,
+            "defaultDirectory": "applications",
+            "nameForMsgs": "Custom Application",
+            "nameForMsgsPlural": "Custom Applications",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Portal": {
+            "metadataName": "Portal",
+            "ext": "portal",
+            "hasContent": false,
+            "defaultDirectory": "portals",
+            "nameForMsgs": "Portal",
+            "nameForMsgsPlural": "Portals",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EmbeddedServiceConfig": {
+            "metadataName": "EmbeddedServiceConfig",
+            "ext": "EmbeddedServiceConfig",
+            "hasContent": false,
+            "defaultDirectory": "EmbeddedServiceConfig",
+            "nameForMsgs": "Embedded Service Config",
+            "nameForMsgsPlural": "Embedded Service Configs",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EmbeddedServiceLiveAgent": {
+            "metadataName": "EmbeddedServiceLiveAgent",
+            "ext": "EmbeddedServiceLiveAgent",
+            "hasContent": false,
+            "defaultDirectory": "EmbeddedServiceLiveAgent",
+            "nameForMsgs": "Embedded Service Live Agent",
+            "nameForMsgsPlural": "Embedded Service Live Agents",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EventType": {
+            "metadataName": "EventType",
+            "ext": "eventType",
+            "hasContent": false,
+            "defaultDirectory": "eventTypes",
+            "nameForMsgs": "Event Type",
+            "nameForMsgsPlural": "Event Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EventSubscription": {
+            "metadataName": "EventSubscription",
+            "ext": "subscription",
+            "hasContent": false,
+            "defaultDirectory": "eventSubscriptions",
+            "nameForMsgs": "Event Subscription",
+            "nameForMsgsPlural": "Event Subscriptions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EventDelivery": {
+            "metadataName": "EventDelivery",
+            "ext": "delivery",
+            "hasContent": false,
+            "defaultDirectory": "eventDeliveries",
+            "nameForMsgs": "Event Delivery",
+            "nameForMsgsPlural": "Event Deliverys",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Flow": {
+            "metadataName": "Flow",
+            "ext": "flow",
+            "hasContent": false,
+            "defaultDirectory": "flows",
+            "nameForMsgs": "Flow",
+            "nameForMsgsPlural": "Flows",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "FlowDefinition": {
+            "metadataName": "FlowDefinition",
+            "ext": "flowDefinition",
+            "hasContent": false,
+            "defaultDirectory": "flowDefinitions",
+            "nameForMsgs": "Flow Definition",
+            "nameForMsgsPlural": "Flow Definitions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Workflow": {
+            "metadataName": "Workflow",
+            "ext": "workflow",
+            "hasContent": false,
+            "defaultDirectory": "workflows",
+            "nameForMsgs": "Workflow",
+            "nameForMsgsPlural": "Workflows",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "WorkflowFieldUpdate",
+                "WorkflowKnowledgePublish",
+                "WorkflowTask",
+                "WorkflowAlert",
+                "WorkflowSend",
+                "WorkflowOutboundMessage",
+                "WorkflowRule"
+            ]
+        },
+        "AssignmentRules": {
+            "metadataName": "AssignmentRules",
+            "ext": "assignmentRules",
+            "hasContent": false,
+            "defaultDirectory": "assignmentRules",
+            "nameForMsgs": "Assignment Rule",
+            "nameForMsgsPlural": "Assignment Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "AssignmentRule"
+            ]
+        },
+        "AutoResponseRules": {
+            "metadataName": "AutoResponseRules",
+            "ext": "autoResponseRules",
+            "hasContent": false,
+            "defaultDirectory": "autoResponseRules",
+            "nameForMsgs": "Auto Response Rule",
+            "nameForMsgsPlural": "Auto Response Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "AutoResponseRule"
+            ]
+        },
+        "EscalationRules": {
+            "metadataName": "EscalationRules",
+            "ext": "escalationRules",
+            "hasContent": false,
+            "defaultDirectory": "escalationRules",
+            "nameForMsgs": "Escalation Rule",
+            "nameForMsgsPlural": "Escalation Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "EscalationRule"
+            ]
+        },
+        "PostTemplate": {
+            "metadataName": "PostTemplate",
+            "ext": "postTemplate",
+            "hasContent": false,
+            "defaultDirectory": "postTemplates",
+            "nameForMsgs": "Post Template",
+            "nameForMsgsPlural": "Post Templates",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApprovalProcess": {
+            "metadataName": "ApprovalProcess",
+            "ext": "approvalProcess",
+            "hasContent": false,
+            "defaultDirectory": "approvalProcesses",
+            "nameForMsgs": "Approval Process",
+            "nameForMsgsPlural": "Approval Processes",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "HomePageComponent": {
+            "metadataName": "HomePageComponent",
+            "ext": "homePageComponent",
+            "hasContent": false,
+            "defaultDirectory": "homePageComponents",
+            "nameForMsgs": "Home Page Component",
+            "nameForMsgsPlural": "Home Page Components",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "HomePageLayout": {
+            "metadataName": "HomePageLayout",
+            "ext": "homePageLayout",
+            "hasContent": false,
+            "defaultDirectory": "homePageLayouts",
+            "nameForMsgs": "Home Page Layout",
+            "nameForMsgsPlural": "Home Page Layouts",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomObjectTranslation": {
+            "metadataName": "CustomObjectTranslation",
+            "ext": "objectTranslation",
+            "hasContent": false,
+            "defaultDirectory": "objectTranslations",
+            "nameForMsgs": "Custom Object Translation",
+            "nameForMsgsPlural": "Custom Object Translations",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Translations": {
+            "metadataName": "Translations",
+            "ext": "translation",
+            "hasContent": false,
+            "defaultDirectory": "translations",
+            "nameForMsgs": "Translations",
+            "nameForMsgsPlural": "Translationses",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "GlobalValueSetTranslation": {
+            "metadataName": "GlobalValueSetTranslation",
+            "ext": "globalValueSetTranslation",
+            "hasContent": false,
+            "defaultDirectory": "globalValueSetTranslations",
+            "nameForMsgs": "Global Value Set Translation",
+            "nameForMsgsPlural": "Global Value Set Translations",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "StandardValueSetTranslation": {
+            "metadataName": "StandardValueSetTranslation",
+            "ext": "standardValueSetTranslation",
+            "hasContent": false,
+            "defaultDirectory": "standardValueSetTranslations",
+            "nameForMsgs": "Standard Value Set Translation",
+            "nameForMsgsPlural": "Standard Value Set Translations",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApexClass": {
+            "metadataName": "ApexClass",
+            "ext": "cls",
+            "hasContent": true,
+            "defaultDirectory": "classes",
+            "nameForMsgs": "Apex Class",
+            "nameForMsgsPlural": "Apex Classes",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApexTrigger": {
+            "metadataName": "ApexTrigger",
+            "ext": "trigger",
+            "hasContent": true,
+            "defaultDirectory": "triggers",
+            "nameForMsgs": "Apex Trigger",
+            "nameForMsgsPlural": "Apex Triggers",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ApexTestSuite": {
+            "metadataName": "ApexTestSuite",
+            "ext": "testSuite",
+            "hasContent": false,
+            "defaultDirectory": "testSuites",
+            "nameForMsgs": "Apex Test Suite",
+            "nameForMsgsPlural": "Apex Test Suites",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Profile": {
+            "metadataName": "Profile",
+            "ext": "profile",
+            "hasContent": false,
+            "defaultDirectory": "profiles",
+            "nameForMsgs": "Profile",
+            "nameForMsgsPlural": "Profiles",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "PermissionSet": {
+            "metadataName": "PermissionSet",
+            "ext": "permissionset",
+            "hasContent": false,
+            "defaultDirectory": "permissionsets",
+            "nameForMsgs": "Permission Set",
+            "nameForMsgsPlural": "Permission Sets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomMetadata": {
+            "metadataName": "CustomMetadata",
+            "ext": "md",
+            "hasContent": false,
+            "defaultDirectory": "customMetadata",
+            "nameForMsgs": "Custom Metadata",
+            "nameForMsgsPlural": "Custom Metadatas",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "DataCategoryGroup": {
+            "metadataName": "DataCategoryGroup",
+            "ext": "datacategorygroup",
+            "hasContent": false,
+            "defaultDirectory": "datacategorygroups",
+            "nameForMsgs": "Data Category Group",
+            "nameForMsgsPlural": "Data Category Groups",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "RemoteSiteSetting": {
+            "metadataName": "RemoteSiteSetting",
+            "ext": "remoteSite",
+            "hasContent": false,
+            "defaultDirectory": "remoteSiteSettings",
+            "nameForMsgs": "Remote Site Setting",
+            "nameForMsgsPlural": "Remote Site Settings",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "MatchingRules": {
+            "metadataName": "MatchingRules",
+            "ext": "matchingRule",
+            "hasContent": false,
+            "defaultDirectory": "matchingRules",
+            "nameForMsgs": "Matching Rule",
+            "nameForMsgsPlural": "Matching Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "MatchingRule"
+            ]
+        },
+        "DuplicateRule": {
+            "metadataName": "DuplicateRule",
+            "ext": "duplicateRule",
+            "hasContent": false,
+            "defaultDirectory": "duplicateRules",
+            "nameForMsgs": "Duplicate Rule",
+            "nameForMsgsPlural": "Duplicate Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CleanDataService": {
+            "metadataName": "CleanDataService",
+            "ext": "cleanDataService",
+            "hasContent": false,
+            "defaultDirectory": "cleanDataServices",
+            "nameForMsgs": "Clean Data Service",
+            "nameForMsgsPlural": "Clean Data Services",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "AuthProvider": {
+            "metadataName": "AuthProvider",
+            "ext": "authprovider",
+            "hasContent": false,
+            "defaultDirectory": "authproviders",
+            "nameForMsgs": "Auth Provider",
+            "nameForMsgsPlural": "Auth Providers",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveTemplateBundle": {
+            "metadataName": "WaveTemplateBundle",
+            "hasContent": false,
+            "defaultDirectory": "waveTemplates",
+            "nameForMsgs": "Wave Template Bundle",
+            "nameForMsgsPlural": "Wave Template Bundles",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveApplication": {
+            "metadataName": "WaveApplication",
+            "ext": "wapp",
+            "hasContent": false,
+            "defaultDirectory": "wave",
+            "nameForMsgs": "Wave Application",
+            "nameForMsgsPlural": "Wave Applications",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveDataset": {
+            "metadataName": "WaveDataset",
+            "ext": "wds",
+            "hasContent": false,
+            "defaultDirectory": "wave",
+            "nameForMsgs": "Wave Dataset",
+            "nameForMsgsPlural": "Wave Datasets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveLens": {
+            "metadataName": "WaveLens",
+            "ext": "wlens",
+            "hasContent": true,
+            "defaultDirectory": "wave",
+            "nameForMsgs": "Wave Lens",
+            "nameForMsgsPlural": "Wave Lenses",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveDashboard": {
+            "metadataName": "WaveDashboard",
+            "ext": "wdash",
+            "hasContent": true,
+            "defaultDirectory": "wave",
+            "nameForMsgs": "Wave Dashboard",
+            "nameForMsgsPlural": "Wave Dashboards",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "WaveDataflow": {
+            "metadataName": "WaveDataflow",
+            "ext": "wdf",
+            "hasContent": true,
+            "defaultDirectory": "wave",
+            "nameForMsgs": "Wave Dataflow",
+            "nameForMsgsPlural": "Wave Dataflows",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomSite": {
+            "metadataName": "CustomSite",
+            "ext": "site",
+            "hasContent": false,
+            "defaultDirectory": "sites",
+            "nameForMsgs": "Custom Site",
+            "nameForMsgsPlural": "Custom Sites",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ChannelLayout": {
+            "metadataName": "ChannelLayout",
+            "ext": "channelLayout",
+            "hasContent": false,
+            "defaultDirectory": "channelLayouts",
+            "nameForMsgs": "Channel Layout",
+            "nameForMsgsPlural": "Channel Layouts",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ContentAsset": {
+            "metadataName": "ContentAsset",
+            "ext": "asset",
+            "hasContent": true,
+            "defaultDirectory": "contentassets",
+            "nameForMsgs": "Content Asset",
+            "nameForMsgsPlural": "Content Assets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "MarketingResourceType": {
+            "metadataName": "MarketingResourceType",
+            "ext": "marketingResourceType",
+            "hasContent": false,
+            "defaultDirectory": "marketingResourceType",
+            "nameForMsgs": "Marketing Resource Type",
+            "nameForMsgsPlural": "Marketing Resource Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "SharingRules": {
+            "metadataName": "SharingRules",
+            "ext": "sharingRules",
+            "hasContent": false,
+            "defaultDirectory": "sharingRules",
+            "nameForMsgs": "Sharing Rule",
+            "nameForMsgsPlural": "Sharing Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false,
+            "childXmlNames": [
+                "SharingOwnerRule",
+                "SharingCriteriaRule"
+            ]
+        },
+        "SharingSet": {
+            "metadataName": "SharingSet",
+            "ext": "sharingSet",
+            "hasContent": false,
+            "defaultDirectory": "sharingSets",
+            "nameForMsgs": "Sharing Set",
+            "nameForMsgsPlural": "Sharing Sets",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Community": {
+            "metadataName": "Community",
+            "ext": "community",
+            "hasContent": false,
+            "defaultDirectory": "communities",
+            "nameForMsgs": "Community",
+            "nameForMsgsPlural": "Communitys",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CallCenter": {
+            "metadataName": "CallCenter",
+            "ext": "callCenter",
+            "hasContent": false,
+            "defaultDirectory": "callCenters",
+            "nameForMsgs": "Call Center",
+            "nameForMsgsPlural": "Call Centers",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "MilestoneType": {
+            "metadataName": "MilestoneType",
+            "ext": "milestoneType",
+            "hasContent": false,
+            "defaultDirectory": "milestoneTypes",
+            "nameForMsgs": "Milestone Type",
+            "nameForMsgsPlural": "Milestone Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EntitlementProcess": {
+            "metadataName": "EntitlementProcess",
+            "ext": "entitlementProcess",
+            "hasContent": false,
+            "defaultDirectory": "entitlementProcesses",
+            "nameForMsgs": "Entitlement Process",
+            "nameForMsgsPlural": "Entitlement Processes",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "EntitlementTemplate": {
+            "metadataName": "EntitlementTemplate",
+            "ext": "entitlementTemplate",
+            "hasContent": false,
+            "defaultDirectory": "entitlementTemplates",
+            "nameForMsgs": "Entitlement Template",
+            "nameForMsgsPlural": "Entitlement Templates",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ConnectedApp": {
+            "metadataName": "ConnectedApp",
+            "ext": "connectedApp",
+            "hasContent": false,
+            "defaultDirectory": "connectedApps",
+            "nameForMsgs": "Connected App",
+            "nameForMsgsPlural": "Connected Apps",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "AppMenu": {
+            "metadataName": "AppMenu",
+            "ext": "appMenu",
+            "hasContent": false,
+            "defaultDirectory": "appMenus",
+            "nameForMsgs": "App Menu",
+            "nameForMsgsPlural": "App Menus",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "DelegateGroup": {
+            "metadataName": "DelegateGroup",
+            "ext": "delegateGroup",
+            "hasContent": false,
+            "defaultDirectory": "delegateGroups",
+            "nameForMsgs": "Delegate Group",
+            "nameForMsgsPlural": "Delegate Groups",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "SiteDotCom": {
+            "metadataName": "SiteDotCom",
+            "ext": "site",
+            "hasContent": true,
+            "defaultDirectory": "siteDotComSites",
+            "nameForMsgs": "Site Dot Com",
+            "nameForMsgsPlural": "Site Dot Coms",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Network": {
+            "metadataName": "Network",
+            "ext": "network",
+            "hasContent": false,
+            "defaultDirectory": "networks",
+            "nameForMsgs": "Network",
+            "nameForMsgsPlural": "Networks",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CustomExperience": {
+            "metadataName": "CustomExperience",
+            "ext": "customExperience",
+            "hasContent": false,
+            "defaultDirectory": "customExperiences",
+            "nameForMsgs": "Custom Experience",
+            "nameForMsgsPlural": "Custom Experiences",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CommunityThemeDefinition": {
+            "metadataName": "CommunityThemeDefinition",
+            "ext": "communityThemeDefinition",
+            "hasContent": false,
+            "defaultDirectory": "communityThemeDefinitions",
+            "nameForMsgs": "Community Theme Definition",
+            "nameForMsgsPlural": "Community Theme Definitions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CommunityTemplateDefinition": {
+            "metadataName": "CommunityTemplateDefinition",
+            "ext": "communityTemplateDefinition",
+            "hasContent": false,
+            "defaultDirectory": "communityTemplateDefinitions",
+            "nameForMsgs": "Community Template Definition",
+            "nameForMsgsPlural": "Community Template Definitions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ManagedTopics": {
+            "metadataName": "ManagedTopics",
+            "ext": "managedTopics",
+            "hasContent": false,
+            "defaultDirectory": "managedTopics",
+            "nameForMsgs": "Managed Topics",
+            "nameForMsgsPlural": "Managed Topicses",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "KeywordList": {
+            "metadataName": "KeywordList",
+            "ext": "keywords",
+            "hasContent": false,
+            "defaultDirectory": "moderation",
+            "nameForMsgs": "Keyword List",
+            "nameForMsgsPlural": "Keyword Lists",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ModerationRule": {
+            "metadataName": "ModerationRule",
+            "ext": "rule",
+            "hasContent": false,
+            "defaultDirectory": "moderation",
+            "nameForMsgs": "Moderation Rule",
+            "nameForMsgsPlural": "Moderation Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Territory2Type": {
+            "metadataName": "Territory2Type",
+            "ext": "territory2Type",
+            "hasContent": false,
+            "defaultDirectory": "territory2Types",
+            "nameForMsgs": "Territory2 Type",
+            "nameForMsgsPlural": "Territory2 Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Territory2Model": {
+            "metadataName": "Territory2Model",
+            "ext": "territory2Model",
+            "hasContent": false,
+            "defaultDirectory": "territory2Models",
+            "nameForMsgs": "Territory2 Model",
+            "nameForMsgsPlural": "Territory2 Models",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Territory2Rule": {
+            "metadataName": "Territory2Rule",
+            "ext": "territory2Rule",
+            "hasContent": false,
+            "defaultDirectory": "territory2Models",
+            "nameForMsgs": "Territory2 Rule",
+            "nameForMsgsPlural": "Territory2 Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Territory2": {
+            "metadataName": "Territory2",
+            "ext": "territory2",
+            "hasContent": false,
+            "defaultDirectory": "territory2Models",
+            "nameForMsgs": "Territory2",
+            "nameForMsgsPlural": "Territory2s",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CampaignInfluenceModel": {
+            "metadataName": "CampaignInfluenceModel",
+            "ext": "campaignInfluenceModel",
+            "hasContent": false,
+            "defaultDirectory": "campaignInfluenceModels",
+            "nameForMsgs": "Campaign Influence Model",
+            "nameForMsgsPlural": "Campaign Influence Models",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "SamlSsoConfig": {
+            "metadataName": "SamlSsoConfig",
+            "ext": "samlssoconfig",
+            "hasContent": false,
+            "defaultDirectory": "samlssoconfigs",
+            "nameForMsgs": "Saml Sso Config",
+            "nameForMsgsPlural": "Saml Sso Configs",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "DataPipeline": {
+            "metadataName": "DataPipeline",
+            "ext": "dataPipeline",
+            "hasContent": true,
+            "defaultDirectory": "dataPipelines",
+            "nameForMsgs": "Data Pipeline",
+            "nameForMsgsPlural": "Data Pipelines",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "CorsWhitelistOrigin": {
+            "metadataName": "CorsWhitelistOrigin",
+            "ext": "corsWhitelistOrigin",
+            "hasContent": false,
+            "defaultDirectory": "corsWhitelistOrigins",
+            "nameForMsgs": "Cors Whitelist Origin",
+            "nameForMsgsPlural": "Cors Whitelist Origins",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "ActionLinkGroupTemplate": {
+            "metadataName": "ActionLinkGroupTemplate",
+            "ext": "actionLinkGroupTemplate",
+            "hasContent": false,
+            "defaultDirectory": "actionLinkGroupTemplates",
+            "nameForMsgs": "Action Link Group Template",
+            "nameForMsgsPlural": "Action Link Group Templates",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LicenseDefinition": {
+            "metadataName": "LicenseDefinition",
+            "ext": "licenseDefinition",
+            "hasContent": false,
+            "defaultDirectory": "licenseDefinitions",
+            "nameForMsgs": "License Definition",
+            "nameForMsgsPlural": "License Definitions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "TransactionSecurityPolicy": {
+            "metadataName": "TransactionSecurityPolicy",
+            "ext": "transactionSecurityPolicy",
+            "hasContent": false,
+            "defaultDirectory": "transactionSecurityPolicies",
+            "nameForMsgs": "Transaction Security Policy",
+            "nameForMsgsPlural": "Transaction Security Policys",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Skill": {
+            "metadataName": "Skill",
+            "ext": "skill",
+            "hasContent": false,
+            "defaultDirectory": "skills",
+            "nameForMsgs": "Skill",
+            "nameForMsgsPlural": "Skills",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LiveChatDeployment": {
+            "metadataName": "LiveChatDeployment",
+            "ext": "liveChatDeployment",
+            "hasContent": false,
+            "defaultDirectory": "liveChatDeployments",
+            "nameForMsgs": "Live Chat Deployment",
+            "nameForMsgsPlural": "Live Chat Deployments",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LiveChatButton": {
+            "metadataName": "LiveChatButton",
+            "ext": "liveChatButton",
+            "hasContent": false,
+            "defaultDirectory": "liveChatButtons",
+            "nameForMsgs": "Live Chat Button",
+            "nameForMsgsPlural": "Live Chat Buttons",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LiveChatAgentConfig": {
+            "metadataName": "LiveChatAgentConfig",
+            "ext": "liveChatAgentConfig",
+            "hasContent": false,
+            "defaultDirectory": "liveChatAgentConfigs",
+            "nameForMsgs": "Live Chat Agent Config",
+            "nameForMsgsPlural": "Live Chat Agent Configs",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "SynonymDictionary": {
+            "metadataName": "SynonymDictionary",
+            "ext": "synonymDictionary",
+            "hasContent": false,
+            "defaultDirectory": "synonymDictionaries",
+            "nameForMsgs": "Synonym Dictionary",
+            "nameForMsgsPlural": "Synonym Dictionarys",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "XOrgHub": {
+            "metadataName": "XOrgHub",
+            "ext": "xorghub",
+            "hasContent": false,
+            "defaultDirectory": "xorghubs",
+            "nameForMsgs": "X Org Hub",
+            "nameForMsgsPlural": "X Org Hubs",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "PathAssistant": {
+            "metadataName": "PathAssistant",
+            "ext": "pathAssistant",
+            "hasContent": false,
+            "defaultDirectory": "pathAssistants",
+            "nameForMsgs": "Path Assistant",
+            "nameForMsgsPlural": "Path Assistants",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LeadConvertSettings": {
+            "metadataName": "LeadConvertSettings",
+            "ext": "LeadConvertSetting",
+            "hasContent": false,
+            "defaultDirectory": "LeadConvertSettings",
+            "nameForMsgs": "Lead Convert Settings",
+            "nameForMsgsPlural": "Lead Convert Settingses",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "LiveChatSensitiveDataRule": {
+            "metadataName": "LiveChatSensitiveDataRule",
+            "ext": "liveChatSensitiveDataRule",
+            "hasContent": false,
+            "defaultDirectory": "liveChatSensitiveDataRule",
+            "nameForMsgs": "Live Chat Sensitive Data Rule",
+            "nameForMsgsPlural": "Live Chat Sensitive Data Rules",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "PlatformCachePartition": {
+            "metadataName": "PlatformCachePartition",
+            "ext": "cachePartition",
+            "hasContent": false,
+            "defaultDirectory": "cachePartitions",
+            "nameForMsgs": "Platform Cache Partition",
+            "nameForMsgsPlural": "Platform Cache Partitions",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "AssistantRecommendationType": {
+            "metadataName": "AssistantRecommendationType",
+            "ext": "assistantRecommendationType",
+            "hasContent": false,
+            "defaultDirectory": "assistantRecommendationTypes",
+            "nameForMsgs": "Assistant Recommendation Type",
+            "nameForMsgsPlural": "Assistant Recommendation Types",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        },
+        "Settings": {
+            "metadataName": "Settings",
+            "ext": "settings",
+            "hasContent": false,
+            "defaultDirectory": "settings",
+            "nameForMsgs": "Settings",
+            "nameForMsgsPlural": "Settingses",
+            "contentIsBinary": false,
+            "hasDecompositions": false
+        }
+    }
+}
