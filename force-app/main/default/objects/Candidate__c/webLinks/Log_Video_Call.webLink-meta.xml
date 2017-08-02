@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_Video_Call</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Log Video Call</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/00T/e?what_id={!Candidate__c.Id}&amp;retURL=%2F{!Candidate__c.Id}&amp;tsk5=Video+Conference+on+-+{!TODAY()}&amp;tsk4={!TODAY()}&amp;tsk6=Participants:+{!Candidate__c.Name}+and+{!User.Name}&amp;tsk12=Completed&amp;tsk13=Normal&amp;tsk10=Other&amp;name=Video+Conference</url>
+</WebLink>

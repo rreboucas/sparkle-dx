@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sum_Average_Scores__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sum of Average Scores of All Interviews</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Average Scores of All Interviews</inlineHelpText>
+    <label>Sum of Average Scores</label>
+    <summarizedField>Interview__c.Average_Score__c</summarizedField>
+    <summaryForeignKey>Interview__c.Candidate__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

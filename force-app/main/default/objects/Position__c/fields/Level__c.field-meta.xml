@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Coordinator</fullName>
+                <default>false</default>
+                <label>Coordinator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

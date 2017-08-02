@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical</fullName>
+    <active>true</active>
+    <label>Technical</label>
+    <picklistValues>
+        <picklist>Interview_Type__c</picklist>
+        <values>
+            <fullName>Management Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruiter Interview</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Technical Interview</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

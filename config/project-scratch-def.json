@@ -1,0 +1,13 @@
+{
+  "country": "US",
+  "edition": "Developer",
+  "orgPreferences": {
+    "enabled": [
+      "ChatterEnabled",
+      "S1DesktopEnabled"
+    ],
+    "disabled": []
+  },
+  "orgName": "Sparkle DX Pilot LCC Scratch Org",
+  "adminEmail": "rreboucas@salesforce.com"
+}
