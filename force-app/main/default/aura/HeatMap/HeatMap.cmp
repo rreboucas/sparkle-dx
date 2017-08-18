@@ -1,0 +1,38 @@
+<aura:component controller="RecordsStores" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+    <!-- ApexClass: RecordsStores  Records_OOS -->
+	<ltng:require styles="{!join(',',
+    						$Resource.heatmap_test + '/leaflet.css',
+                            $Resource.SLDS232 + '/assets/styles/salesforce-lightning-design-system.css' 
+                           )}"
+             	  scripts="{!join(',',
+    						$Resource.heatmap_test + '/leaflet.js',
+    						$Resource.heatmap_test + '/heatmap.js',
+                            $Resource.heatmap_test + '/leaflet-heatmap.js',
+                           	$Resource.horizontalChartJS + '/Chart.bundle.js',
+                           	$Resource.horizontalChartJS + '/utils.js'
+                           )}"
+ 				   afterScriptsLoaded="{!c.jsLoaded}"
+                  />
+    
+    <aura:attribute name="location" type="SObject"/>
+    <aura:attribute name="jsLoaded" type="boolean" default="false"/>
+    
+    <aura:attribute name="properties" type="Sobject"/>
+    <aura:attribute name="oos" type="instock__Reposici_n_de_Stock__c"/>
+    
+    <aura:attribute name="mapLoaded" type="boolean" default="false"/>
+    <aura:attribute name="nearest_store" type="SObject"/>
+    <aura:attribute name="horizontalChart" type="Object" />
+    <aura:handler name="change" value="{!v.nearest_store}" action="{!c.storeDetails}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    
+    <div class="slds-grid slds-wrap">
+        <div aura:id="map_container" class="map_container slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--6-of-12">
+            <div id="map" style="height:350px;"></div>
+        </div>
+    </div>
+
+
+</aura:component>

@@ -1,15 +1,15 @@
 public with sharing class TemplateResolver {
     
     public static String candidateFields(String emailTemplate, String recordID){
-        return replace(emailTemplate, 'testautonumdata__Candidate__c', recordID);
+        return replace(emailTemplate, 'Candidate__c', recordID);
     }
     
     public static String positionFields(String emailTemplate, String recordID){
-        return replace(emailTemplate, 'testautonumdata__Position__c', recordID);
+        return replace(emailTemplate, 'Position__c', recordID);
     }
     
     public static String offerFields(String emailTemplate, String recordID){
-        return replace(emailTemplate, 'testautonumdata__Offer__c', recordID);
+        return replace(emailTemplate, 'Offer__c', recordID);
     }
 
     public static String userFields(String emailTemplate, String recordID){
