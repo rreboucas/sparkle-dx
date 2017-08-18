@@ -1,0 +1,26 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Interview__c",
+                "referenceId": "Interview__cRef1"
+            },
+            "Date__c": "8/18/2017",
+            "Interview_Date__c": "2017-08-18T19:00:00.000+0000",
+            "Interview_Type__c": "Recruiter Interview",
+            "Score_Total__c": 0,
+            "Status__c": "Completed"
+        },
+        {
+            "attributes": {
+                "type": "Interview__c",
+                "referenceId": "Interview__cRef2"
+            },
+            "Date__c": "10/12/2022",
+            "Interview_Date__c": "2022-10-12T20:00:00.000+0000",
+            "Interview_Type__c": "Recruiter Interview",
+            "Score_Total__c": 0,
+            "Status__c": "Pending"
+        }
+    ]
+}

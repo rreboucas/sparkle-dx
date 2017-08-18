@@ -1,0 +1,18 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef1"
+            },
+            "Referral_Message__c": "I have worked with this candiodate before and highly recommend him for this Position"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef2"
+            },
+            "Referral_Message__c": "I would recommend this candidate for this Position."
+        }
+    ]
+}

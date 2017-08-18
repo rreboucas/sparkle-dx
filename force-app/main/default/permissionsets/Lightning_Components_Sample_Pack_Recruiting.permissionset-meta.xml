@@ -363,7 +363,7 @@
     </recordTypeVisibilities>
     <tabSettings>
         <tab>Candidate__c</tab>
-        <visibility>Available</visibility>
+        <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
         <tab>Interview__c</tab>

@@ -11,7 +11,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column1_fieldapiname</name>
-                <value>testautonumdata__Candidate__r.testautonumdata__Full_Name__c</value>
+                <value>Candidate__r.Full_Name__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column1_headertext</name>
@@ -19,7 +19,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column2_fieldapiname</name>
-                <value>testautonumdata__Candidate__r.testautonumdata__Position__r.Name</value>
+                <value>Candidate__r.Position__r.Name</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column2_headertext</name>
@@ -27,7 +27,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column3_fieldapiname</name>
-                <value>testautonumdata__Date__c</value>
+                <value>Date__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column3_headertext</name>
@@ -35,7 +35,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column4_fieldapiname</name>
-                <value>testautonumdata__Interview_Type__c</value>
+                <value>Interview_Type__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>column4_headertext</name>
@@ -43,7 +43,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>eventIDField</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filter1_fieldValue</name>
@@ -51,7 +51,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filter1_fieldapiname</name>
-                <value>testautonumdata__Status__c</value>
+                <value>Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>fireListRecordsEvent</name>
@@ -67,7 +67,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Interview__c</value>
+                <value>Interview__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectName</name>
@@ -83,7 +83,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>sortFieldName</name>
-                <value>testautonumdata__Candidate__r.testautonumdata__Position__r.Name</value>
+                <value>Candidate__r.Position__r.Name</value>
             </componentInstanceProperties>
             <componentName>InterviewsList</componentName>
         </componentInstances>
@@ -102,7 +102,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>Modal_column2_fieldapiname</name>
-                <value>testautonumdata__Candidate__r.testautonumdata__Full_Name__c</value>
+                <value>Candidate__r.Full_Name__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>Modal_column2_headertext</name>
@@ -118,7 +118,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>Modal_column4_fieldapiname</name>
-                <value>testautonumdata__Referral_Message__c</value>
+                <value>Referral_Message__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>Modal_column4_headertext</name>
@@ -126,11 +126,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>ParentObjectFieldName</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>ParentObjectRelationshipField</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>RelFieldWithName</name>
@@ -162,7 +162,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Referral__c</value>
+                <value>Referral__c</value>
             </componentInstanceProperties>
             <componentName>CandidateReferrals</componentName>
         </componentInstances>
@@ -172,11 +172,11 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>TwitterIDFieldApiName</name>
-                <value>testautonumdata__Twitter_ID__c</value>
+                <value>Twitter_ID__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentName>Twitter_Picture_Viewer</componentName>
         </componentInstances>
@@ -187,27 +187,27 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>ObjectCompanyNameAPIField</name>
-                <value>testautonumdata__Company__c</value>
+                <value>Company__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>ObjectEmailAPIField</name>
-                <value>testautonumdata__E_mail__c</value>
+                <value>E_mail__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>ObjectFirstNameAPIField</name>
-                <value>testautonumdata__First_Name__c</value>
+                <value>First_Name__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>ObjectLastNameAPIField</name>
-                <value>testautonumdata__Last_Name__c</value>
+                <value>Last_Name__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>TwitterIDFieldApiName</name>
-                <value>testautonumdata__Twitter_ID__c</value>
+                <value>Twitter_ID__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentName>Twitter_Explorer</componentName>
         </componentInstances>
@@ -222,7 +222,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>detail2FieldAPIName</name>
-                <value>testautonumdata__Status__c</value>
+                <value>Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>detail2Header</name>
@@ -234,40 +234,25 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Interview__c</value>
+                <value>Interview__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectDateDisplayFieldName</name>
-                <value>testautonumdata__Date__c</value>
+                <value>Date__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectDateFieldName</name>
-                <value>testautonumdata__Interview_Date__c</value>
+                <value>Interview_Date__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>parentObjectIDFieldName</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>titleFieldAPIName</name>
-                <value>testautonumdata__Interview_Type__c</value>
+                <value>Interview_Type__c</value>
             </componentInstanceProperties>
             <componentName>RecordTimeline</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>applicationName</name>
-                <value>rodrigocanvas</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>developerName</name>
-                <value>rodrigocanvas</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>namespacePrefix</name>
-                <value>testautonumdata</value>
-            </componentInstanceProperties>
-            <componentName>CanvasApp</componentName>
         </componentInstances>
         <name>column2</name>
         <type>Region</type>

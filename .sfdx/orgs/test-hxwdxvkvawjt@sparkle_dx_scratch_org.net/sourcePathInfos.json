@@ -32,14 +32,14 @@
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default",
         {
-            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 646,
             "modifiedTime": 1503085483000,
             "changeTime": 1503085483000,
-            "contentHash": "9909a03418006ffaec2aa95b2b479aaeeb9fa9f8"
+            "contentHash": "9909a03418006ffaec2aa95b2b479aaeeb9fa9f8",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
@@ -4155,16 +4155,14 @@
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/Interviewer_Console.flexipage-meta.xml",
         {
+            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/Interviewer_Console.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 8405,
-            "modifiedTime": 1497959674000,
-            "changeTime": 1497959674000,
-            "contentHash": "bbeb86b67a393d5ddbd8330af56749e9127757cb",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "size": 8116,
+            "modifiedTime": 1503090072000,
+            "changeTime": 1503090072000,
+            "contentHash": "4bc1fd978249e71c50f409bc1588c45fbc37b691"
         }
     ],
     [
@@ -4215,31 +4213,27 @@
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/Sparkle_All_LCs.flexipage-meta.xml",
         {
+            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/Sparkle_All_LCs.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 12467,
-            "modifiedTime": 1497959674000,
-            "changeTime": 1497959674000,
-            "contentHash": "cb7aa358e5ee74e41b49799c6e06d7d5c82ec158",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "size": 11303,
+            "modifiedTime": 1503090072000,
+            "changeTime": 1503090072000,
+            "contentHash": "dd5d93110c204cc777922ccefec458e3cebcb170"
         }
     ],
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/recruitingApplicationUtilityBar.flexipage-meta.xml",
         {
+            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/flexipages/recruitingApplicationUtilityBar.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 2372,
-            "modifiedTime": 1497959674000,
-            "changeTime": 1497959674000,
-            "contentHash": "a209e2b327c27719ba10ca1628c69ac0d066d75c",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "size": 2321,
+            "modifiedTime": 1503090072000,
+            "changeTime": 1503090072000,
+            "contentHash": "894bfe666739d538f07630fbd2fce9979bd84b90"
         }
     ],
     [
@@ -4290,16 +4284,14 @@
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/layouts/Candidate__c-Compania B.layout-meta.xml",
         {
+            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/layouts/Candidate__c-Compania B.layout-meta.xml",
             "isDirectory": false,
-            "size": 8433,
-            "modifiedTime": 1501870091000,
-            "changeTime": 1501870091000,
-            "contentHash": "4652116026d17047eaf14844aad339559132fad9",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "size": 8652,
+            "modifiedTime": 1503090072000,
+            "changeTime": 1503090072000,
+            "contentHash": "1f5b4e8e10abb3aab08d7cff80ded43b863baf18"
         }
     ],
     [
@@ -7399,23 +7391,23 @@
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/permissionsets/Lightning_Components_Sample_Pack_Recruiting.permissionset-meta.xml",
             "isDirectory": false,
             "isMetadataFile": true,
-            "size": 13689,
-            "modifiedTime": 1503085483000,
-            "changeTime": 1503085483000,
-            "contentHash": "4ed8d5050bac5ce06ddbbff596adbe882b5f360f"
+            "size": 13687,
+            "modifiedTime": 1503090072000,
+            "changeTime": 1503090072000,
+            "contentHash": "eda2fe25065c98d1a63d7337cca11dc5fddfe50e"
         }
     ],
     [
         "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/permissionsets",
         {
-            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SalesforceDX/sparkle-dx-pilot/force-app/main/default/permissionsets",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 102,
             "modifiedTime": 1503085483000,
             "changeTime": 1503085483000,
-            "contentHash": "4dbac1d57f1bc65a93a4f7323a35adbeceb1b2de"
+            "contentHash": "4dbac1d57f1bc65a93a4f7323a35adbeceb1b2de",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ]
 ]

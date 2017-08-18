@@ -5,7 +5,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>displayfieldapiname</name>
-                <value>testautonumdata__Full_Name__c</value>
+                <value>Full_Name__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filter1_fieldValue</name>
@@ -13,7 +13,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filter1_fieldapiname</name>
-                <value>testautonumdata__HasTwitterID__c</value>
+                <value>HasTwitterID__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>height</name>
@@ -32,7 +32,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objectApiName</name>
-                <value>testautonumdata__Candidate__c</value>
+                <value>Candidate__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>scrollable</name>
