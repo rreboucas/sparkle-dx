@@ -124,7 +124,19 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>testDataService</componentName>
+            <componentInstanceProperties>
+                <name>designHeight</name>
+                <value>small</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>sObjectFieldName</name>
+                <value>Rating__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>sObjectName</name>
+                <value>Candidate__c</value>
+            </componentInstanceProperties>
+            <componentName>RatingCmp</componentName>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>

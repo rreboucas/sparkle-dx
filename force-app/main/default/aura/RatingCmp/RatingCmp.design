@@ -1,0 +1,5 @@
+<design:component label="Rating">
+    <design:attribute name="sObjectName" label="sObject Name" default="" description="Which sObject?" />
+    <design:attribute name="sObjectFieldName" label="sObjectFieldName Name" default="" description="Which field of sObject?" />
+	<design:attribute name="designHeight" label="Height" datasource="small,medium,large" default="small" description="How tall should the component?" />
+</design:component>
