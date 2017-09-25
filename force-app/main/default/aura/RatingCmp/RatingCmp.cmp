@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+
+<aura:attribute access="public" name="sObjectName" type="String" default=""/>    
+<aura:attribute access="public" name="sObjectFieldName" type="String" default=""/>   
+<aura:attribute name="designHeight" type="String" />
+<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div aura:id="main">
+
+    Rating
+<lightning:container aura:id="ReactApp"
+                            src="{!$Resource.Rating + '/index.html?objectName=' + v.sObjectName + '&amp;fieldName=' + v.sObjectFieldName + '&amp;recordId=' + v.recordId }"/>
+    </div>
+        
+</aura:component>
