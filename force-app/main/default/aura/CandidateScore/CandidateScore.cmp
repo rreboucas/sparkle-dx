@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId, forceCommunity:availableForAllPageTypes" access="global" >
 	
     <ltng:require scripts="{!join(',',
     				$Resource.ChartJS23, 
