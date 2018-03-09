@@ -5,7 +5,8 @@
 	<aura:attribute name="filter1_fieldapiname" type="String" access="global"/>
     <aura:attribute name="filter1_fieldValue" type="String" access="global"/>
     <aura:attribute name="searchKey" type="String" />
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+		<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+		<aura:handler event="c:ltngOut_Event" action="{!c.handleLightningOutEvent}"/>
     
     <div class="slds" style="padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
     	

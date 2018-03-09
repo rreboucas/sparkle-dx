@@ -40,5 +40,24 @@
 	    });
 	    navEvt.fire();
         console.log("DynamicSearchController.navigateToRecord exit");
+    },
+    
+    handleLightningOutEvent: function(component, event, helper) {
+        console.log("DynamicSearchController.handleLightningOutEvent: entered");
+
+        var params = event.getParams();
+        
+        if (params.attrib1 && params.attrib1Type)
+        component.set("v.objectApiName", params.attrib1);
+        if (params.attrib2 && params.attrib2Type)
+        component.set("v.displayfieldapiname", params.attrib2);
+        if (params.attrib3 && params.attrib3Type)
+        component.set("v.filter1_fieldapiname", params.attrib3);
+        if (params.attrib4 && params.attrib4Type)
+        component.set("v.filter1_fieldValue", params.attrib4);
+        
+        
+        
+        console.log("DynamicSearchController.handleLightningOutEvent: entered");
     }
 })

@@ -54,7 +54,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
     <label>Candidate</label>
     <nameField>
         <label>Candidate Name</label>

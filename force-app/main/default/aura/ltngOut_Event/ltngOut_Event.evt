@@ -1,0 +1,26 @@
+<aura:event type="APPLICATION" description="Event template">
+     <!-- add aura:attribute tags to define event shape.
+      One sample attribute here -->
+      <aura:attribute name="WhoFired" type="String" access="global"/>
+      <aura:attribute name="attrib1" type="String" access="GLOBAL"/>
+      <aura:attribute name="attrib1Type" type="String" access="global" />
+      <aura:attribute name="attrib2" type="String" access="global" />
+      <aura:attribute name="attrib2Type" type="String" access="global" />
+      <aura:attribute name="attrib3" type="String" access="global" />
+      <aura:attribute name="attrib3Type" type="String" access="global" />
+      <aura:attribute name="attrib4" type="String" access="global" />  
+      <aura:attribute name="attrib4Type" type="String" access="global" />  
+      <aura:attribute name="attrib5" type="String" access="global" />  
+      <aura:attribute name="attrib5Type" type="String" access="global" /> 
+      <aura:attribute name="attrib6" type="String" access="GLOBAL"/>
+      <aura:attribute name="attrib6Type" type="String" access="global" />
+      <aura:attribute name="attrib7" type="String" access="global" />
+      <aura:attribute name="attrib7Type" type="String" access="global" />
+      <aura:attribute name="attrib8" type="String" access="global" />
+      <aura:attribute name="attrib8Type" type="String" access="global" />
+      <aura:attribute name="attrib9" type="String" access="GLOBAL"/>
+      <aura:attribute name="attrib9Type" type="String" access="global" />
+      <aura:attribute name="attrib10" type="String" access="global" />
+      <aura:attribute name="attrib10Type" type="String" access="global" />
+
+</aura:event>
