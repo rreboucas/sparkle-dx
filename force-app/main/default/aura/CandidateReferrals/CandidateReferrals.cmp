@@ -26,6 +26,8 @@
     <aura:attribute name="Modal_column3_fieldapiname" type="String" default="CreatedDate" access="global"/>
     <aura:attribute name="Modal_column4_headertext" type="String" default="Description" access="global"/>
     <aura:attribute name="Modal_column4_fieldapiname" type="String" default="Referral_Message__c" access="global"/>
+    <aura:attribute name="UseChatterPictures" type="Boolean" default="true" access="global"/>
+
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:handler event="ltng:selectSObject" action="{!c.handleApplicationEvent}"/>
     

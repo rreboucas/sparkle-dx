@@ -19,7 +19,7 @@ public with sharing class RelatedListServerController {
     
     
     @AuraEnabled
-    public static List<RelatedListServerController> getListRecords(String rowsLimit, String recordId, String objectApiName, String ParentObjectFieldName, String filter1Field, String filter1Value, String column1, String RelFieldWithName, String column2) {
+    public static List<RelatedListServerController> getListRecords(String rowsLimit, String recordId, String objectApiName, String ParentObjectFieldName, String filter1Field, String filter1Value, String column1, String RelFieldWithName, String column2, Boolean chatterPictures) {
         
         System.debug('######## rowsLimit: ' + rowsLimit);
         System.debug('######## objectApiName: ' + objectApiName);
@@ -96,11 +96,13 @@ public with sharing class RelatedListServerController {
                         {
                             i.OwnerID = Sparkle_Helper.GetSobjectField(e, column1);
                             
-                            ConnectApi.Photo userPhoto = ConnectApi.ChatterUsers.getPhoto(null, i.OwnerID);
+                            if (chatterPictures){
+                                ConnectApi.Photo userPhoto = ConnectApi.ChatterUsers.getPhoto(null, i.OwnerID);
                                 if (userPhoto != null)
                                     i.iconUrl = userPhoto.smallPhotoUrl;
-                                else
-                                    i.iconUrl = 'https://www.lightningdesignsystem.com/assets/images/avatar1.jpg';
+                            }
+                            else
+                                i.iconUrl = 'https://www.lightningdesignsystem.com/assets/images/avatar1.jpg';
                         }
 
                         if (RelFieldWithName != null)

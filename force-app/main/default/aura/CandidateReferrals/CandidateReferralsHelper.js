@@ -16,7 +16,8 @@
             filter1Value  : cmp.get("v.filter1_fieldValue"),
             column1  : cmp.get("v.column1_fieldapiname"),
             RelFieldWithName  : cmp.get("v.RelFieldWithName"),
-            column2  : cmp.get("v.column2_fieldapiname")
+            column2  : cmp.get("v.column2_fieldapiname"),
+            chatterPictures : cmp.get("v.UseChatterPictures")
         });
 
         // Create a callback that is executed after 
