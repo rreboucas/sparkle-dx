@@ -11,6 +11,7 @@
 		<aura:handler event="c:ltngOut_Event" action="{!c.handleLightningOutEvent}"/>
     
     <div class="slds" style="padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
+				<div class="slds-card">
     	
     	<div class="slds" style="padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
     	<div class="slds-page-header" role="banner">
@@ -35,7 +36,8 @@
 	                <li><a data-record="{!rec.recordID}" onclick="{!c.navigateToRecord}">{!rec.displayfieldname}</a></li>
 	            </aura:iteration>
 	        </ul>
-    	</div>
+			</div>
+			</div>
 	</div>
 
 </aura:component>

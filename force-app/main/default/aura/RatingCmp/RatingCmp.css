@@ -1,6 +1,8 @@
 .THIS {
     position: relative;
     overflow: hidden;
+    padding-left: 2%;
+    padding-top: 2%;
 }
 .THIS.small {
     height: 5rem;

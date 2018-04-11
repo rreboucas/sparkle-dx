@@ -21,7 +21,7 @@
     <aura:handler event="ltng:selectSObject" action="{!c.handleApplicationEvent}"/>
     
     <div class="slds">
-        
+      <div class="slds-card">
         <div class="slds-page-header" role="banner">
                   <div class="slds-grid">
                     <div class="slds-col slds-has-flexi-truncate">
@@ -89,7 +89,7 @@
         
         </div>
     <!-- End of Timneline  -->        
-        
+        </div>
     </div>
   
 </aura:component>

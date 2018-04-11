@@ -45,6 +45,7 @@
 
 
     <aura:registerEvent name="recordListEvent" type="c:recordListEvent"/>
+    <div class="slds-card">
     <div class="slds tokenPadding" style="">
       <!-- List LC: Start -->  
         <div class="slds-page-header" role="banner">
@@ -185,5 +186,5 @@
         <!-- Modal LC: End -->
         
     </div>
-  
+  </div>
 </aura:component>

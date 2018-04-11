@@ -35,7 +35,7 @@
     <aura:registerEvent name="showRecords" type="c:displayrecdetails" />
     
     <div class="slds" style="padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
-        
+      <div class="slds-card"> 
                 <div class="slds-page-header" role="banner">
                   <div class="slds-grid">
                     <div class="slds-col slds-has-flexi-truncate">
@@ -90,7 +90,7 @@
                     <c:Popover_Modal />
                 </div>    -->
     
-        
+     </div>   
     </div>
 
     <c:Generic_List_Modal Modal_Name="{!v.Modal_Name}"

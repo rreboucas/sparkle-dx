@@ -7,7 +7,7 @@
     <ltng:require styles="/resource/SLDS0103/assets/styles/salesforce-lightning-design-system-ltng.css" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <div class="slds" style="border: 0px solid #aaa;">
-        
+      <div class="slds-card">
         <div class="slds-page-header" role="banner">
                   <div class="slds-grid">
                     <div class="slds-col slds-has-flexi-truncate">
@@ -40,5 +40,6 @@
         <!-- Start of Canvas App  -->
         
     <force:canvasApp developerName="{!v.developerName}" applicationName="{!v.applicationName}" namespacePrefix="{!v.namespacePrefix}" maxHeight="400px" maxWidth="600px"/>
-    </div>
+      </div>
+  </div>
 </aura:component>

@@ -18,7 +18,7 @@
 
 
     <div class="slds" style="padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
-
+        <div class="slds-card">
         <div class="slds-page-header" role="banner">
                   <div class="slds-grid">
                     <div class="slds-col slds-has-flexi-truncate">
@@ -53,7 +53,7 @@
                 <c:TwitterUserSearch />     
             </div>
         </div>
-    
+    </div>
     </div>
     
 </aura:component>
