@@ -1,6 +1,20 @@
 <aura:documentation>
-	<aura:description>Documentation</aura:description>
-	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-		Example Description
-	</aura:example>
+    <aura:meta name="owner" value="Salesforce ISV TE Team" />
+    <aura:meta name="formFactors" value="all" />
+    <aura:meta name="isSubComponent" value="false" />
+    <aura:meta name="category" value="List" />
+    <aura:meta name="classification" value="Custom" />
+
+  <aura:description>
+    <p>The <code>c:DynamicSearch</code> component is a quick search list Lightning Component that lets you load a short list of Salesforce records based on the Sobject that you specify and allows your users to quickly search/filter the list of records instantly access the records that they need to access frequently. Users can click on top of the record names to go to the Record page in the Lightning Experience and Salesforce Mobile.</p>
+    <p>Add this custom Lightning Component to your Lightning Application Utility Bar to allow your users to navigate faster to their records.</p>
+    
+    <p>Here's an example that creates a Dynamic Search List of records.</p>
+    <pre>&lt;aura:component>
+    &lt;c:DynamicSearch objectApiName="Candidate__c"  />
+&lt;/aura:component></pre>
+    
+
+  </aura:description>
+
 </aura:documentation>

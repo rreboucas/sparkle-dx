@@ -1,4 +1,4 @@
-<aura:component controller="RecordTimelineServerController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, forceCommunity:availableForAllPageTypes" access="global" >
+<aura:component controller="RecordTimelineServerController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
   <aura:attribute name="lstRecords" type="RecordTimelineServerController" access="global"/>
     <aura:attribute name="listName" type="String" default="History Timeline" access="global"/>
     <aura:attribute name="listSize" type="Integer" default="0" access="global"/>

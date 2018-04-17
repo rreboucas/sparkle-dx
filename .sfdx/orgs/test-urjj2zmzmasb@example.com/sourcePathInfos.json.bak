@@ -95,7 +95,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura",
             "isDirectory": true,
             "size": 1248,
-            "modifiedTime": 1523288186950,
+            "modifiedTime": 1523566113993,
             "changeTime": 1523288186950,
             "contentHash": "e37253ebbcc7b78f8088a02c516a076bda39aece",
             "isMetadataFile": false,
@@ -290,7 +290,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CandidateReferrals",
             "isDirectory": true,
             "size": 320,
-            "modifiedTime": 1523288186919,
+            "modifiedTime": 1523482411163,
             "changeTime": 1523288186919,
             "contentHash": "b75fe85ed27ea0b858f14af89a8cdce75990ade2",
             "isMetadataFile": false,
@@ -305,7 +305,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CandidateReferrals/CandidateReferrals.cmp",
             "isDirectory": false,
             "size": 5992,
-            "modifiedTime": 1523466570000,
+            "modifiedTime": 1523482411164,
             "changeTime": 1523466570656,
             "contentHash": "9a5c9b4a404e9e0d4f7a35c06e73a8374da04aa4",
             "isMetadataFile": false,
@@ -513,14 +513,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CanvasApp",
             "isDirectory": true,
-            "size": 224,
-            "modifiedTime": 1523288186920,
-            "changeTime": 1523288186920,
-            "contentHash": "59df85aa3cee3bc811a309491e7728b2692d7686",
+            "size": 256,
+            "modifiedTime": 1523483695671,
+            "changeTime": 1523483695671,
+            "contentHash": "c0f71d4d5dd3edcd56911af71914ca005ac044fa",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -529,7 +527,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CanvasApp/CanvasApp.cmp",
             "isDirectory": false,
             "size": 2441,
-            "modifiedTime": 1523467049000,
+            "modifiedTime": 1523482411164,
             "changeTime": 1523467049590,
             "contentHash": "7c509dc7de49b8130c20b7c7acd472125c585de2",
             "isMetadataFile": false,
@@ -648,7 +646,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/DynamicSearch",
             "isDirectory": true,
             "size": 352,
-            "modifiedTime": 1523288186922,
+            "modifiedTime": 1523482411164,
             "changeTime": 1523288186922,
             "contentHash": "724579a57689ce821528cc926ee93d66579f4882",
             "isMetadataFile": false,
@@ -662,28 +660,27 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/DynamicSearch/DynamicSearch.auradoc",
             "isDirectory": false,
-            "size": 209,
-            "modifiedTime": 1523288186921,
-            "changeTime": 1523288186921,
-            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "size": 1141,
+            "modifiedTime": 1523564346254,
+            "changeTime": 1523564346254,
+            "contentHash": "7d42c46eedf4be175fc1ef505039158902dede5e",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
         "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/DynamicSearch/DynamicSearch.cmp",
         {
-            "state": "u",
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/DynamicSearch/DynamicSearch.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 2041,
-            "modifiedTime": 1523467739000,
+            "modifiedTime": 1523482411165,
             "changeTime": 1523467739712,
-            "isWorkspace": false,
-            "contentHash": "5c8f8aa48bb0ab43ba5c2757475eacdf04246637"
+            "contentHash": "5c8f8aa48bb0ab43ba5c2757475eacdf04246637",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -796,14 +793,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/FilesViewer",
             "isDirectory": true,
-            "size": 288,
-            "modifiedTime": 1523288186923,
-            "changeTime": 1523288186923,
-            "contentHash": "1a5006bbf700fb9b0d93d85d71c6d0dd89e771db",
+            "size": 320,
+            "modifiedTime": 1523483695664,
+            "changeTime": 1523483695664,
+            "contentHash": "ae067f1f90480aca5d53441461d8c319f42f8d1e",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -812,7 +807,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/FilesViewer/FilesViewer.cmp",
             "isDirectory": false,
             "size": 3806,
-            "modifiedTime": 1523466911000,
+            "modifiedTime": 1523482411165,
             "changeTime": 1523466911900,
             "contentHash": "92439631ac34c624478f5533a4a1a3135540a144",
             "isMetadataFile": false,
@@ -1275,14 +1270,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/InterviewsList",
             "isDirectory": true,
-            "size": 320,
-            "modifiedTime": 1523288186927,
-            "changeTime": 1523288186927,
-            "contentHash": "a442e316f554270bb71c1826775f87e76b926864",
+            "size": 352,
+            "modifiedTime": 1523483695648,
+            "changeTime": 1523483695648,
+            "contentHash": "aa621632638a939be21171c1cd82a20a6c0d5753",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -1291,7 +1284,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/InterviewsList/InterviewsList.cmp",
             "isDirectory": false,
             "size": 10790,
-            "modifiedTime": 1523465456000,
+            "modifiedTime": 1523482411166,
             "changeTime": 1523465456084,
             "contentHash": "71c4dc09394f4e4243664be6df907809d8afeb6b",
             "isMetadataFile": false,
@@ -1590,7 +1583,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferConfirm",
             "isDirectory": true,
             "size": 224,
-            "modifiedTime": 1523288186930,
+            "modifiedTime": 1523482411166,
             "changeTime": 1523288186930,
             "contentHash": "bd547f2a2e3871b91c613abe91b1805a7f3b915f",
             "isMetadataFile": false,
@@ -1635,7 +1628,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferConfirm/OfferConfirm.css",
             "isDirectory": false,
             "size": 59,
-            "modifiedTime": 1523467586000,
+            "modifiedTime": 1523482411167,
             "changeTime": 1523467586140,
             "contentHash": "974607189415d692d4cc0c4787463721b09ab779",
             "isMetadataFile": false,
@@ -1679,7 +1672,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferDetails",
             "isDirectory": true,
             "size": 224,
-            "modifiedTime": 1523288186931,
+            "modifiedTime": 1523482411167,
             "changeTime": 1523288186931,
             "contentHash": "09a5435d22aeb67f58a8b15b8803a08f06e371ef",
             "isMetadataFile": false,
@@ -1724,7 +1717,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferDetails/OfferDetails.css",
             "isDirectory": false,
             "size": 59,
-            "modifiedTime": 1523467539306,
+            "modifiedTime": 1523482411167,
             "changeTime": 1523467539306,
             "contentHash": "974607189415d692d4cc0c4787463721b09ab779",
             "isMetadataFile": false,
@@ -1768,7 +1761,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferLetterSPA",
             "isDirectory": true,
             "size": 288,
-            "modifiedTime": 1523288186932,
+            "modifiedTime": 1523482411167,
             "changeTime": 1523288186932,
             "contentHash": "8c790b787ab30b1cdcdac919dab84914bc2dd35e",
             "isMetadataFile": false,
@@ -1827,7 +1820,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferLetterSPA/OfferLetterSPA.css",
             "isDirectory": false,
             "size": 77,
-            "modifiedTime": 1523467509000,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523467389126,
             "contentHash": "3bf7678436c1f837f783f6d8d79143e101a239cf",
             "isMetadataFile": false,
@@ -1886,7 +1879,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferPreview",
             "isDirectory": true,
             "size": 224,
-            "modifiedTime": 1523288186933,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523288186933,
             "contentHash": "f49aa9c0bee55462b193496648c4b30fce90b133",
             "isMetadataFile": false,
@@ -1931,7 +1924,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferPreview/OfferPreview.css",
             "isDirectory": false,
             "size": 59,
-            "modifiedTime": 1523467595039,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523467595039,
             "contentHash": "974607189415d692d4cc0c4787463721b09ab779",
             "isMetadataFile": false,
@@ -2020,7 +2013,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferTemplate",
             "isDirectory": true,
             "size": 256,
-            "modifiedTime": 1523288186935,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523288186935,
             "contentHash": "18867f3c01ce840d8f0b6b58fe22846c2ba70695",
             "isMetadataFile": false,
@@ -2065,7 +2058,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/OfferTemplate/OfferTemplate.css",
             "isDirectory": false,
             "size": 59,
-            "modifiedTime": 1523467605000,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523467605071,
             "contentHash": "974607189415d692d4cc0c4787463721b09ab779",
             "isMetadataFile": false,
@@ -2169,7 +2162,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/ProjectSparkleLCsInfo",
             "isDirectory": true,
             "size": 320,
-            "modifiedTime": 1523288186937,
+            "modifiedTime": 1523482411168,
             "changeTime": 1523288186937,
             "contentHash": "aee487979626e7bac7968c51ecf63f330d8a1f00",
             "isMetadataFile": false,
@@ -2198,14 +2191,13 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/ProjectSparkleLCsInfo/ProjectSparkleLCsInfo.cmp",
             "isDirectory": false,
-            "size": 649,
-            "modifiedTime": 1523288186935,
-            "changeTime": 1523288186935,
-            "contentHash": "c2a6309d18b297fad68dbd287be2c219fcc0db9f",
+            "size": 680,
+            "modifiedTime": 1523482411169,
+            "changeTime": 1523467816641,
+            "contentHash": "8b9129f825d780f4131974409ad32633d133ba9f",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
@@ -2303,14 +2295,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RatingCmp",
             "isDirectory": true,
-            "size": 224,
-            "modifiedTime": 1523288186937,
-            "changeTime": 1523288186937,
-            "contentHash": "04298728509e835919a8e25fb05d271fafbf8d10",
+            "size": 256,
+            "modifiedTime": 1523483695670,
+            "changeTime": 1523483695670,
+            "contentHash": "f2c7f45580f344abd620bc9ca88eb7e03f971b51",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -2318,13 +2308,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RatingCmp/RatingCmp.cmp",
             "isDirectory": false,
-            "size": 744,
-            "modifiedTime": 1523467297453,
-            "changeTime": 1523467297453,
-            "contentHash": "f25749e8a41ec6634af1593738063da22b259a73",
+            "size": 743,
+            "modifiedTime": 1523483695670,
+            "changeTime": 1523483695670,
+            "contentHash": "0437485bfb92e186f7edfb0e5d3f974ac86fff93",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "state": "u"
         }
     ],
     [
@@ -2347,13 +2336,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RatingCmp/RatingCmp.css",
             "isDirectory": false,
-            "size": 552,
-            "modifiedTime": 1523467674948,
-            "changeTime": 1523467674948,
-            "contentHash": "1f6a927c86a52c4cf9298bd9f83b03b737c95694",
+            "size": 551,
+            "modifiedTime": 1523483695669,
+            "changeTime": 1523483695669,
+            "contentHash": "2afa3004f80093146930445ad020a037282b9a6c",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "state": "u"
         }
     ],
     [
@@ -2436,14 +2424,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RecordTimeline",
             "isDirectory": true,
-            "size": 256,
-            "modifiedTime": 1523288186939,
-            "changeTime": 1523288186939,
-            "contentHash": "bbba535afb5859a412e5bfedcdcb1ce0f0091a02",
+            "size": 288,
+            "modifiedTime": 1523483489201,
+            "changeTime": 1523483489201,
+            "contentHash": "78bcaa83469b4525f19ed80c5a4c85faefe6c30f",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -2451,13 +2437,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RecordTimeline/RecordTimeline.cmp",
             "isDirectory": false,
-            "size": 5255,
-            "modifiedTime": 1523466689000,
-            "changeTime": 1523466689255,
-            "contentHash": "c388d81d05a87733b81de8bb8b292839182c2d08",
+            "size": 5254,
+            "modifiedTime": 1523483489201,
+            "changeTime": 1523483489201,
+            "contentHash": "45990f4c260f804914e953cbf674ce61f776ceb8",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "state": "u"
         }
     ],
     [
@@ -2780,14 +2765,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Explorer",
             "isDirectory": true,
-            "size": 288,
-            "modifiedTime": 1523288186945,
-            "changeTime": 1523288186945,
-            "contentHash": "3ea58057a8b79ef125abf7e375d741481307601f",
+            "size": 320,
+            "modifiedTime": 1523483695675,
+            "changeTime": 1523483695675,
+            "contentHash": "530835710e0f08e0910d7bb9393b53db38a13f3e",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -2796,7 +2779,7 @@
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Explorer/Twitter_Explorer.cmp",
             "isDirectory": false,
             "size": 3017,
-            "modifiedTime": 1523466418000,
+            "modifiedTime": 1523482411171,
             "changeTime": 1523466418080,
             "contentHash": "86078f914e88b10cc71e1c0dbb3aedbbcb843d50",
             "isMetadataFile": false,
@@ -2899,14 +2882,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Picture_Viewer",
             "isDirectory": true,
-            "size": 288,
-            "modifiedTime": 1523288186947,
-            "changeTime": 1523288186947,
-            "contentHash": "fa02a00a79ab29949de3811802452966fc6685e7",
+            "size": 320,
+            "modifiedTime": 1523483695662,
+            "changeTime": 1523483695662,
+            "contentHash": "ede83d24718fc5a4cc8df23019a370f257f06b0d",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -2914,13 +2895,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Picture_Viewer/Twitter_Picture_Viewer.cmp",
             "isDirectory": false,
-            "size": 2499,
-            "modifiedTime": 1523466658052,
-            "changeTime": 1523466658052,
-            "contentHash": "1952c063a9943ebade6d4962ba37e5d9e03ee578",
+            "size": 2498,
+            "modifiedTime": 1523483695663,
+            "changeTime": 1523483695663,
+            "contentHash": "7510e552b4670b43618514ea1e7efa0d7982671b",
             "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false
+            "state": "u"
         }
     ],
     [
@@ -4338,14 +4318,12 @@
         {
             "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/flexipages/Candidate_Record_Page.flexipage-meta.xml",
             "isDirectory": false,
-            "size": 6179,
-            "modifiedTime": 1523288186965,
-            "changeTime": 1523288186965,
-            "contentHash": "11735af22bfa55ae11243f2cb39b5f53f9df0fcf",
+            "size": 6457,
+            "modifiedTime": 1523483489208,
+            "changeTime": 1523483489208,
+            "contentHash": "64944373f592ecbaf43a01fc6dcb6d97e4654d86",
             "isMetadataFile": true,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "state": "u"
         }
     ],
     [
@@ -7691,6 +7669,97 @@
             "state": "u",
             "isWorkspace": true,
             "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RecordTimeline/RecordTimeline.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RecordTimeline/RecordTimeline.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483489201,
+            "changeTime": 1523483489201,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/InterviewsList/InterviewsList.auradoc",
+        {
+            "state": "u",
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/InterviewsList/InterviewsList.auradoc",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1710,
+            "modifiedTime": 1523567725000,
+            "changeTime": 1523567725565,
+            "contentHash": "69d8745bebb81b0af88f5cc7462fcd68a6b624a1"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Picture_Viewer/Twitter_Picture_Viewer.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Picture_Viewer/Twitter_Picture_Viewer.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483695662,
+            "changeTime": 1523483695662,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/FilesViewer/FilesViewer.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/FilesViewer/FilesViewer.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483695664,
+            "changeTime": 1523483695664,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RatingCmp/RatingCmp.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/RatingCmp/RatingCmp.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483695669,
+            "changeTime": 1523483695669,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CanvasApp/CanvasApp.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/CanvasApp/CanvasApp.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483695671,
+            "changeTime": 1523483695671,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Explorer/Twitter_Explorer.auradoc",
+        {
+            "sourcePath": "/Users/rreboucas/Documents/SFDXProjects/sparkleapril2018/sparkle-dx/force-app/main/default/aura/Twitter_Explorer/Twitter_Explorer.auradoc",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1523483695675,
+            "changeTime": 1523483695675,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ]
 ]

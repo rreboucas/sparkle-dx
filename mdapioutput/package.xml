@@ -2,25 +2,21 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
     <name>AuraDefinitionBundle</name>
-    <members>LightningNotification</members>
-  </types>
-  <types>
-    <name>ApexClass</name>
-    <members>AsyncNotificationController</members>
-    <members>MyBatchClass</members>
-  </types>
-  <types>
-    <name>FlexiPage</name>
-    <members>Position_Record_Page</members>
-    <members>Position_Record_Page1</members>
-  </types>
-  <types>
-    <name>CustomObject</name>
-    <members>Notification__e</members>
-  </types>
-  <types>
-    <name>StaticResource</name>
-   <members>cometd</members>
+    <members>CanvasApp</members>
+    <members>DynamicSearch</members>
+    <members>FilesViewer</members>
+    <members>InterviewsList</members>
+    <members>OfferConfirm</members>
+    <members>OfferDetails</members>
+    <members>OfferLetterSPA</members>
+    <members>OfferPreview</members>
+    <members>OfferTemplate</members>
+    <members>ProjectSparkleLCsInfo</members>
+    <members>RatingCmp</members>
+    <members>RecordTimeline</members>
+    <members>Twitter_Explorer</members>
+    <members>Twitter_Picture_Viewer</members>
+    <members>ltngOut_Event</members>
   </types>
   <version>39.0</version>
 </Package>
