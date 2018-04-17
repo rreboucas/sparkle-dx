@@ -1,3 +1,11 @@
+
+<!--
+  Copyright (c) 2018, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+
 <aura:event type="APPLICATION" description="Event that bubbles to Twitter Explorer child components with record information" access="GLOBAL" >
         <!-- add aura:attribute tags to define event shape.
       One sample attribute here -->

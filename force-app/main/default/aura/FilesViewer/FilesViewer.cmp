@@ -1,3 +1,10 @@
+
+<!--
+  Copyright (c) 2018, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
 <aura:component controller="FilesViewerServerController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
   <aura:attribute name="lstRecords" type="FilesViewerServerController" access="global"/>
   <aura:attribute name="listName" type="String" default="Files Viewer" access="global"/>
