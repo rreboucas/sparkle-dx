@@ -26,9 +26,10 @@ Orgs with Lightning Experience and MyDomain Enabled
 * **Rodrigo Reboucas** 
 * **Kamlesh Patel** 
 * **Michael Holt** 
-* **Calvin Out** 
+* **Calvin Ou** 
 * **Hemant Jawale** 
 * **Jaswinder Rattanpal** 
+* **Lightning TE Experts Team** 
 
 
 ## License
