@@ -17,7 +17,7 @@ Orgs with Lightning Experience and MyDomain Enabled
 ## Built With
 
 * [Lightning Components Framework](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/intro_framework.htm/) - The web framework used
-* [Maven](https://www.lightningdesignsystem.com//) - Lightning Design System
+* [Lightning Design System](https://www.lightningdesignsystem.com//) - Lightning Design System
 
 
 
