@@ -7,8 +7,25 @@
 -->
 
 <aura:documentation>
-	<aura:description>Documentation</aura:description>
-	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-		Example Description
-	</aura:example>
+    <aura:meta name="owner" value="Salesforce ISV TE Team" />
+    <aura:meta name="formFactors" value="all" />
+    <aura:meta name="isSubComponent" value="false" />
+    <aura:meta name="category" value="List" />
+    <aura:meta name="classification" value="Custom" />
+
+  <aura:description>
+    <p>The <code>c:TwitterExplorer</code> component is a custom Lightning Component built to show the most recent Tweet from the user on Twitter. It loads the user's Twitter profile picture, location and a link with the most recent Tweet that takes the user directly to Twitter to see the Tweet details when clicked.</p>
+    <p><b>Technical Scope:</b> Example of how to integrate custom Lightning Components with external APIs. This component receives the Object Record Id from Record Pages and also through the standard ltng:selectSobject Lightning Application event used by other Lightning Components.</p>
+    <p>Add this custom Lightning Component to your Lightning Application and Lightning Community Record Lightning Pages to users to see the record/User Twitter profile.</p>
+    
+    <p>Here's an example that creates a Twitter Explorer Lightning Component.</p>
+    <pre>&lt;aura:component>
+    &lt;c:TwitterExplorer objectApiName="Candidate__c" 
+    TwitterIDFieldApiName="Twitter_ID__c" 
+      />
+&lt;/aura:component></pre>
+    
+
+  </aura:description>
+
 </aura:documentation>
