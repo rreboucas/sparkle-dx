@@ -1,6 +1,3 @@
-
-[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://labappdeploy.herokuapp.com/?template=https://github.com/rreboucas/sparkle-dx.git&sco=true)
-
 # Lightning Components Sample Pack - Recruiting (Project Sparkle)
 
 Example Lightning App with a set of Generic Responsive Lightning Components capable of loading and interacting with data from any Salesforce Object. Components can be surfaced on Standard (record pages and Home Page) and Custom Lightning Pages. Components can be put together on Lightning Pages and communicate with each other using Lightning Standard Events.
