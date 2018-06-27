@@ -1,15 +1,13 @@
-<aura:component>
-    <aura:component implements="force:appHostable,lightning:isUrlAddressable,flexipage:availableForAllPageTypes" access="global" >
+<aura:component implements="force:appHostable,lightning:isUrlAddressable,flexipage:availableForAllPageTypes" access="global" >
     
-        <aura:attribute name="recordId" type="String" />
-        <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-        
+    <aura:attribute name="recordId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
-        <aura:if isTrue="{!v.recordId != null}">
-            <c:OfferLetterSPA recordId="{!v.recordId}"/>
-            <aura:set attribute="else">
-                Please provide a record ID
-            </aura:set>
-        </aura:if>
-    </aura:component>
-</aura:component>	
+
+    <aura:if isTrue="{!v.recordId != null}">
+        <c:OfferLetterSPA recordId="{!v.recordId}"/>
+        <aura:set attribute="else">
+            Please provide a record ID
+        </aura:set>
+    </aura:if>
+</aura:component>
