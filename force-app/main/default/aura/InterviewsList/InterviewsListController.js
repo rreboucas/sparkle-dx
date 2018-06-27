@@ -1,11 +1,3 @@
-
-/*
-* Copyright (c) 2018, salesforce.com, inc.
-* All rights reserved.
-* SPDX-License-Identifier: BSD-3-Clause
-* For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
-*/
-
 ({
     doInit : function(component, event, helper) {
         
@@ -68,13 +60,19 @@
         var arr = [];
         arr = lstRecs;
         if (arr != null && !component.get("v.isDoneRendering")){
-            /*var rec1 = arr[0].recordID ;
-            console.log("rec1: " + rec1); */
-            var firstRow = component.find("firstRow");
 
-            console.log("firstRow: " + firstRow);
-            $A.util.removeClass(firstRow, "slds-hint-parent");
-            $A.util.addClass(firstRow, "slds-is-selected"); 
+            //var firstRow = component.find("firstRow");
+
+            //console.log("firstRow: " + firstRow);
+            //$A.util.removeClass(firstRow, "slds-hint-parent");
+            //$A.util.addClass(firstRow, "slds-is-selected"); 
+            //Set first row to be selected
+            var tblRows = component.find('tblRows');
+            if(typeof(tblRows[0]) != 'undefined'){
+	            component.set("v.lastSelectedRow", tblRows[0].getElement());
+				$A.util.addClass(tblRows[0].getElement(), "slds-is-selected");
+            }
+            
             component.set("v.isDoneRendering", true);
             
             
@@ -96,6 +94,18 @@
     
     fireApplicationEvent : function(component, event, helper) {
 
+        var lastSelectedRow = component.get("v.lastSelectedRow");
+        console.log('lastSelectedRow', lastSelectedRow);
+		$A.util.removeClass(lastSelectedRow, "slds-is-selected");
+        /*
+        $A.util.removeClass(rows, "slds-is-selected");
+        console.log('listRows', rows);
+        for(var cmp in rows) {
+            console.log('listRows.cmp', cmp);
+            $A.util.removeClass(cmp, "slds-is-selected");
+        }
+        
+        /*
         //CSS - Remove Selected class from first row and any other rows that were selected before        
         var firstRow = component.find("firstRow");
         console.log("firstRow: " + firstRow);
@@ -109,6 +119,7 @@
             $A.util.removeClass(lastSelectedRow, "slds-is-selected");
         	$A.util.addClass(lastSelectedRow, "slds-hint-parent");
         }
+        /**/
         
         // Grab the record id from the DOM - Table row that was clicked
        
@@ -116,7 +127,8 @@
         console.log("selectedItem: " + selectedItem);
         var SelectedRecordID = selectedItem.dataset.record;
         console.log('Selected Record ID = '+ SelectedRecordID);
-
+        component.set("v.selectedEventIDField", SelectedRecordID);
+		
 
 
 
@@ -124,8 +136,10 @@
         console.log('SelectedParentRecID = '+ SelectedParentRecID);
         component.set("v.selectedRecordId", SelectedParentRecID);
         
+        
+        
         //CSS - Add Selected class to the row that was clicked        
-        $A.util.removeClass(selectedItem, "slds-hint-parent");
+        //$A.util.removeClass(selectedItem, "slds-hint-parent");
         $A.util.addClass(selectedItem, "slds-is-selected"); 
         
         // Store the last Table Rown that was clicked
@@ -162,12 +176,13 @@
         console.log("InterviewsListController.handleListMenuClick: entered");
         var btnLabel = component.get("v.buttonLabel");
 
-
-        var selectedItem = event.detail.menuItem.elements["0"].textContent;
+        var selectedItem = event.getParam("value");//event.detail.menuItem.elements["0"].textContent;
         console.log("selectedItem: " + selectedItem);
 
-        var selectedRecId = component.get("v.selectedRecordId");
+        var selectedRecId = component.get("v.selectedRecordId")
+        var selectedEventIDField = component.get('v.selectedEventIDField');
         console.log("selectedRecId: " + selectedRecId);
+        console.log("selectedEventIDField: " + selectedEventIDField);
 
         switch (selectedItem) {
             case "View":
@@ -181,6 +196,33 @@
                 var editRecordEvent = $A.get("e.force:editRecord");
                 editRecordEvent.setParams({"recordId": selectedRecId});
                 editRecordEvent.fire();
+                break;
+            case "SendOffer":
+                console.log("Send Offer");
+                
+               //redirect to Send Offer Tab
+                var pageRef = {
+                    type: "standard__navItemPage",
+                    attributes: {
+                        apiName: "Send_Job_Offer_to_Candidate"
+                    },
+                    state: {
+                        "c__recordId": selectedEventIDField
+                    }
+                };
+                component.find("navigationService").navigate(pageRef);
+                break;
+                
+            case "ViewCandidate":
+            //Redirect to candidate page
+                var pageRef = {
+                    type: "standard__recordPage",
+                    attributes: {
+                        recordId: selectedEventIDField,
+                        actionName: "view"
+                    }
+                };
+                component.find("navigationService").navigate(pageRef);
                 break;
             case btnLabel:
                 console.log("btnLabel switch: ");
@@ -252,7 +294,7 @@
                     if (recordIdsString)
                     {
                         // if there is content in the comma-delimitted list of record ids fire the application event with it as a parameter
-                        var appEvent = $A.get("e.c:RecordListIdsEvent");
+                        var appEvent = $A.get("e.testautonumdata:RecordListIdsEvent");
                         console.log('InterviewsListController.fireListRecordsEvent: appEvent ' + appEvent);
                         appEvent.setParams({ "recordIdsParameter": recordIdsString });
                         console.log('InterviewsListController.fireListRecordsEvent: appEvent ' + appEvent);
