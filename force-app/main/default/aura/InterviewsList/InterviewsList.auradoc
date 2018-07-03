@@ -1,34 +1,6 @@
-
-<!--
-  Copyright (c) 2018, salesforce.com, inc.
-  All rights reserved.
-  SPDX-License-Identifier: BSD-3-Clause
-  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
--->
-
 <aura:documentation>
-    <aura:meta name="owner" value="Salesforce ISV TE Team" />
-    <aura:meta name="formFactors" value="all" />
-    <aura:meta name="isSubComponent" value="false" />
-    <aura:meta name="category" value="List" />
-    <aura:meta name="classification" value="Custom" />
-
-  <aura:description>
-    <p>The <code>c:InterviewsList</code> component is an enhanced list view Lightning Component that let's you load a list of Salesforce records based on the Sobject that you specify and allows your users to search/filter the list of records to quickly access the records that they need to access and perform standard record actions. Users can click on the action button on each row to View or Edit the record in the Lightning Experience and Salesforce Mobile. A Row selection also bordcasts the selected record ID to other Lightning Components that may need to refresh based on list selection.</p>
-    <p>Add this custom Lightning Component to your Lightning Application and Lightning Community Lightning Pages to allow your users to access and perform actions on records faster and to create a Console style pages where other Lightning Components display contextual information based on the record that was selected on the list.</p>
-    
-    <p>Here's an example that creates an Enhanced List of records.</p>
-    <pre>&lt;aura:component>
-    &lt;c:InterviewsList objectApiName="Interview__c" 
-    filter1_fieldapiname="Status__c" 
-    filter1_fieldValue="Pending" 
-    column1_headertext="Candidate" 
-    column1_fieldapiname="Candidate__r.Full_Name__c" 
-    column2_headertext="Position" 
-    column2_fieldapiname="Candidate__r.Position__r.Name"  />
-&lt;/aura:component></pre>
-    
-
-  </aura:description>
-
+	<aura:description>Documentation</aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		Example Description
+	</aura:example>
 </aura:documentation>
