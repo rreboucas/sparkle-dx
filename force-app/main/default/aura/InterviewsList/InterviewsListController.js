@@ -1,5 +1,11 @@
 ({
     doInit : function(component, event, helper) {
+        // Call client side helper action to populate the list with records
+        helper.getListRecords(component);
+
+        // Call client side helper action to call server and get the running user Id
+        helper.getRunningUser(component);
+        
         
         console.log("InterviewsListController.doInit: entered");
         
@@ -44,11 +50,7 @@
             $A.util.addClass(toggleRow,'toggle');
         }
         
-        // Call client side helper action to populate the list with records
-        helper.getListRecords(component);
-
-        // Call client side helper action to call server and get the running user Id
-        helper.getRunningUser(component);
+        
 
         console.log("InterviewsListController.doInit: exit");
         
@@ -67,8 +69,9 @@
             //$A.util.removeClass(firstRow, "slds-hint-parent");
             //$A.util.addClass(firstRow, "slds-is-selected"); 
             //Set first row to be selected
+            console.log('Test 1');
             var tblRows = component.find('tblRows');
-            if(typeof(tblRows[0]) != 'undefined'){
+            if(typeof(tblRows) != 'undefined' && tblRows.length > 0){
 	            component.set("v.lastSelectedRow", tblRows[0].getElement());
 				$A.util.addClass(tblRows[0].getElement(), "slds-is-selected");
             }
