@@ -33,7 +33,7 @@
                 
                 
                 var lstRecs = cmp.get("v.lstRecords");
-                console.log("InterviewListHelper: lstRecs" + lstRecs); 
+                console.log("InterviewListHelper: lstRecs", lstRecs); 
                 // Put all record ids in a comma-delimetted string to pass to other components like a map using an application event
                 
                 var recordIdsString;

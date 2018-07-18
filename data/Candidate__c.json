@@ -9,11 +9,7 @@
             "Company__c": "Salesforce.com",
             "E_mail__c": "r@r.com",
             "First_Name__c": "Rodrigo",
-            "Full_Name__c": "Rodrigo Reboucas",
-            "Geolocation__c": {
-                "latitude": 24.555059,
-                "longitude": -81.779987
-            },
+            "Last_Name__c": "Rodrigo Reboucas",
             "Geolocation__Latitude__s": 24.555059,
             "Geolocation__Longitude__s": -81.779987,
             "Hired__c": false,

@@ -354,6 +354,14 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
+        <recordType>Candidate__c.Compania_B</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Candidate__c.Internal_Candidate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <recordType>Interview__c.Recruiter</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
