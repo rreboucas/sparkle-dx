@@ -1,0 +1,57 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="helpsection1_title" type="String" default="Help Section 1 Title" access="global"/>
+    <aura:attribute name="helpsection1_p1" type="String" default="Help Section 1 - Paragraph 1" access="global"/>
+    <aura:attribute name="helpsection1_p2" type="String" default="Help Section 1 - Paragraph 2" access="global"/>
+    <aura:attribute name="helpsection1_p3" type="String" default="Help Section 1 - Paragraph 3" access="global"/>
+    <aura:attribute name="helpsection2_title" type="String" default="Help Section 2 Title" access="global"/>
+    <aura:attribute name="helpsection2_p1" type="String" default="Help Section 2 - Paragraph 1" access="global"/>
+    <aura:attribute name="helpsection2_p2" type="String" default="Help Section 2 - Paragraph 2" access="global"/>
+    <aura:attribute name="helpsection2_p3" type="String" default="Help Section 2 - Paragraph 3" access="global"/>
+    <aura:attribute name="helpsection3_title" type="String" default="Help Section 3 Title" access="global"/>
+    <aura:attribute name="helpsection3_p1" type="String" default="Help Section 3 - Paragraph 1" access="global"/>
+    <aura:attribute name="helpsection3_p2" type="String" default="Help Section 3 - Paragraph 2" access="global"/>
+    <aura:attribute name="helpsection3_p3" type="String" default="Help Section 3 - Paragraph 3" access="global"/>
+
+    <aura:attribute name="title" type="String" default="Custom Title"/>
+    
+
+    <lightning:card>
+        <!--<div class="slds-align_absolute-center">       
+            <lightning:badge label="Help for this Page"/>
+        </div>            -->
+
+        <div class="slds-page-header">
+                <div class="slds-media">
+                  <div class="slds-media__figure">
+                    <span class="slds-icon_container" title="Description of icon when needed">
+                            <lightning:icon iconName="action:question_post_action" size="small" alternativeText="Error!" variant="error"/>
+                    </span>
+                  </div>
+                  <div class="slds-media__body">
+                    <h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Rohde Corp - 80,000 Widgets">Help for this Page</h1>
+                    <p class="slds-text-body_small slds-line-height_reset">Expand the sections below for details</p>
+                  </div>
+                </div>
+              </div>
+
+        <lightning:accordion aura:id="accordion" activeSectionName="A">
+        <lightning:accordionSection name="A" label="{!v.helpsection1_title}">
+            <aura:set attribute="body">
+                <p><br/>{!v.helpsection1_p1}</p><br/>
+                <p>{!v.helpsection1_p2}</p><br/>
+                <p>{!v.helpsection1_p3}</p>
+            </aura:set>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="B" label="{!v.helpsection2_title}"><br/>
+                <p>{!v.helpsection2_p1}</p><br/>
+                <p>{!v.helpsection2_p2}</p><br/>
+                <p>{!v.helpsection2_p3}</p>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="C" label="{!v.helpsection3_title}"><br/>
+                <p>{!v.helpsection3_p1}</p><br/>
+                <p>{!v.helpsection3_p2}</p><br/>
+                <p>{!v.helpsection3_p3}</p>
+        </lightning:accordionSection>
+    </lightning:accordion>
+    </lightning:card>
+</aura:component>	

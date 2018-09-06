@@ -1,4 +1,5 @@
-<aura:component controller="Twitter_Lightning_Controller" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, forceCommunity:availableForAllPageTypes" access="global" >
+
+<aura:component controller="Twitter_Lightning_Controller" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
     
     <aura:attribute name="recordId" type="String" access="GLOBAL"/>
     <aura:attribute name="pictureURL" type="String" access="GLOBAL"/>

@@ -1,0 +1,49 @@
+<aura:component controller="FlexFileUploadController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName" access="global">
+  <aura:attribute name="options" type="List" default="[{'label': 'File', 'value': 'File'},{'label': 'Attachment','value': 'Attachment'},{'label': 'Content','value': 'Content'}]" />  
+  <aura:attribute name="accept" type="List" default="['.jpg', '.jpeg']"/>
+        <aura:attribute name="multiple" type="Boolean" default="true"/>
+        <aura:attribute name="disabled" type="Boolean" default="false"/>
+        <aura:handler event="aura:waiting" action="{!c.waiting}"/>
+        <aura:handler event="aura:doneWaiting" action="{!c.doneWaiting}"/>
+        <aura:attribute name="uploadTypevalue" type="String" default="File"/>
+        <aura:attribute name="contentURL" type="String" access="global"/>
+        <aura:attribute name="hasContentURL" type="Boolean" default="false"/>
+        <aura:attribute name="isUploading" type="Boolean" default="false"/>
+        <aura:attribute name="progress" type="Integer" default="0"/>
+        <aura:attribute name="fileName" type="String" access="global"/>
+        <aura:attribute name="fileExtension" type="String" access="global"/>
+        <aura:attribute name="sObjectName" type="String" />
+    
+    <lightning:card>
+        <div class="slds-page-header">
+                        <div class="slds-media">
+                          <div class="slds-media__figure">
+                            <span class="slds-icon_container" title="Description of icon when needed">
+                                    <lightning:icon iconName="action:question_post_action" size="small" alternativeText="Error!" variant="error"/>
+                            </span>
+                          </div>
+                          <div class="slds-media__body">
+                            <h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Rohde Corp - 80,000 Widgets">Flexible File Uploader</h1>
+                            <p class="slds-text-body_small slds-line-height_reset">Chose how you would like your file to be uploaded:</p>
+                          </div>
+                        </div>
+                </div>
+        
+        <lightning:radioGroup name="radioGroup"
+                                label="Chose Upload Type:"
+                                options="{! v.options }"
+                                value="{! v.uploadTypevalue }"
+                                type="radio"/>
+        
+        <input type="file" class="file" aura:id="file" />
+        <lightning:button label="Save" title="Upload File" onclick="{! c.save }"/>
+        <aura:if isTrue="{!v.isUploading}">
+                <lightning:spinner alternativeText="Loading" />
+        </aura:if>         
+        
+
+        <div>{!v.body}</div>
+       
+
+    </lightning:card>
+</aura:component>

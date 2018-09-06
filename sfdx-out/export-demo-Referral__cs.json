@@ -1,0 +1,52 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef1"
+            },
+            "Referral_Message__c": "I recommend this candidate!",
+            "Candidate__c": "@Candidate__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef2"
+            },
+            "Referral_Message__c": "I highly recommend!",
+            "Candidate__c": "@Candidate__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef1"
+            },
+            "Referral_Message__c": "I recommend this candidate!",
+            "Candidate__c": "@Candidate__cRef2"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef2"
+            },
+            "Referral_Message__c": "I highly recommend!",
+            "Candidate__c": "@Candidate__cRef2"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef1"
+            },
+            "Referral_Message__c": "I recommend this candidate!",
+            "Candidate__c": "@Candidate__cRef3"
+        },
+        {
+            "attributes": {
+                "type": "Referral__c",
+                "referenceId": "Referral__cRef2"
+            },
+            "Referral_Message__c": "I highly recommend!",
+            "Candidate__c": "@Candidate__cRef3"
+        }
+    ]
+}

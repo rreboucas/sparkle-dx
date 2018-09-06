@@ -1,0 +1,34 @@
+<aura:component implements="lightning:appHomeTemplate" description="This is the description info for My Custom Two-Column App Page Template. I can provide helpful information for my customers regarding my custom template, which regions it has etc.">
+	<aura:attribute name="sidenav" type="Aura.Component[]" />
+    <aura:attribute name="left" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+    
+    <aura:attribute name="showQuestionMark" type="Boolean" default="true"/>
+    <aura:attribute name="showClose" type="Boolean" default="false"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="slds-page-header">
+    <lightning:layout horizontalAlign="spread">
+      
+        <lightning:layoutItem flexibility="grow" class="slds-m-right_small">
+        {!v.left}
+        </lightning:layoutItem>
+        <lightning:layoutItem size="{! $Browser.isDesktop ? '4' : '6' }"
+        class="slds-m-left_small">
+        {!v.right}
+        </lightning:layoutItem>
+        <lightning:layoutItem aura:id="sidenav" class="sidenav design-allow-interaction" flexibility="auto">
+            <aura:if isTrue="{!v.showQuestionMark}">
+                <lightning:buttonIcon iconName="utility:help" class="helpclass" size="large" variant="bare" onclick="{! c.handleHamburgerClick }" alternativeText="Show Side Menu" />  
+            </aura:if>
+            <aura:if isTrue="{!v.showClose}">
+                <lightning:buttonIcon iconName="utility:macros" class="helpclass" size="large" variant="bare" onclick="{! c.handleCloseClick }" alternativeText="Close Side Menu" />  
+                {!v.sidenav}
+            </aura:if>
+          
+          
+        </lightning:layoutItem>
+    </lightning:layout>
+    </div> 
+</aura:component>

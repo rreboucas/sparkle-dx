@@ -66,15 +66,8 @@
         		
         		// Mark Progress Bar OfferDetails LC indicator as Complete
                 
-                var toggleIndicatorCurrent = component.find("detailsIndicator");
-                $A.util.removeClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-current');
-        		$A.util.addClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-complete');
+                component.set('v.progressStep', '2');
                 
-                // Mark Progress Bar OfferTemplate LC indicator as Current
-                
-                var toggleIndicatorNext = component.find("templateIndicator");
-                $A.util.removeClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-incomplete');
-        		$A.util.addClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-current');
                 
                 break;
 
@@ -85,13 +78,7 @@
                 var templateLC = component.find("templateDiv");
         		$A.util.addClass(templateLC,'toggle');
 
-                var toggleIndicatorCurrent = component.find("templateIndicator");
-                $A.util.removeClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-current');
-        		$A.util.addClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-incomplete');
-                
-                var toggleIndicatorPrevious = component.find("detailsIndicator");
-                $A.util.removeClass(toggleIndicatorPrevious,'slds-tabs--path__item slds-is-complete');
-        		$A.util.addClass(toggleIndicatorPrevious,'slds-tabs--path__item slds-is-current');
+                component.set('v.progressStep', '1');
                 
                 break;
                 
@@ -103,13 +90,7 @@
         		$A.util.addClass(templateLC,'toggle');
                 
                 
-                var toggleIndicatorCurrent = component.find("templateIndicator");
-                $A.util.removeClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-current');
-        		$A.util.addClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-complete');
-                
-                var toggleIndicatorNext = component.find("previewIndicator");
-                $A.util.removeClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-incomplete');
-        		$A.util.addClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-current');
+                component.set('v.progressStep', '3');
 
                 break;
                 
@@ -120,13 +101,7 @@
                 var previewLC = component.find("previewDiv");
         		$A.util.addClass(previewLC,'toggle');
                 
-                var toggleIndicatorCurrent = component.find("previewIndicator");
-                $A.util.removeClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-current');
-        		$A.util.addClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-incomplete');
-                
-                var toggleIndicatorPrevious = component.find("templateIndicator");
-                $A.util.removeClass(toggleIndicatorPrevious,'slds-tabs--path__item slds-is-complete');
-        		$A.util.addClass(toggleIndicatorPrevious,'slds-tabs--path__item slds-is-current');
+                component.set('v.progressStep', '2');
 
                 break;
                 
@@ -138,13 +113,7 @@
         		$A.util.addClass(previewLC,'toggle');
                 
                 
-                var toggleIndicatorCurrent = component.find("previewIndicator");
-                $A.util.removeClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-current');
-        		$A.util.addClass(toggleIndicatorCurrent,'slds-tabs--path__item slds-is-complete');
-                
-                var toggleIndicatorNext = component.find("confirmIndicator");
-                $A.util.removeClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-incomplete');
-        		$A.util.addClass(toggleIndicatorNext,'slds-tabs--path__item slds-is-current');
+                component.set('v.progressStep', '4');
 
                 break;
         }

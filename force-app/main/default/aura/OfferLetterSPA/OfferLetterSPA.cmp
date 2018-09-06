@@ -18,8 +18,10 @@
     <aura:attribute name="offerName" type="String" access="global" />  
     <aura:attribute name="offerText" type="String" access="global" />  
     <aura:attribute name="offerSubject" type="String" access="global" /> 
-    <aura:attribute name="sendResult" type="String" access="global" />  
-
+    <aura:attribute name="sendResult" type="String" access="global" />
+    <aura:attribute name="progressStep" type="String" default="1" access="global" />   
+    <aura:attribute name="variant" type="String" default="non-linear"/>
+    <aura:attribute name="hideUpdateButton" type="Boolean" default="true"/>
     
     <aura:registerEvent name="DetailEventEvent" type="c:CandidateDetailEvent"/>
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
@@ -34,46 +36,14 @@
             </lightning:layoutItem>
             <lightning:layoutItem flexibility="auto" padding="around-small">
                 
-                <!-- Progress Bar-->
-                        <div class="slds-grid">
-                          <div class="slds-tabs--path" role="application">
-                            <ul class="slds-tabs--path__nav" role="tablist">
-                              <li aura:id="detailsIndicator" class="slds-tabs--path__item slds-is-current" role="presentation">
-                                <a class="slds-tabs--path__link" id="tabs-path-2326" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
-                                  <span class="slds-tabs--path__stage">
-                                    <lightning:icon iconName="utility:check  " size="x-small" alternativeText="Indicates approval"/>
-                                  </span>
-                                  <span class="slds-tabs--path__title">Details</span>
-                                </a>
-                              </li>
-                              <li aura:id="templateIndicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
-                                <a class="slds-tabs--path__link" id="tabs-path-2327" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
-                                  <span class="slds-tabs--path__stage">
-                                    <lightning:icon iconName="utility:check  " size="x-small" alternativeText="Indicates approval"/>
-                                  </span>
-                                  <span class="slds-tabs--path__title">Edit</span>
-                                </a>
-                              </li>
-                              <li aura:id="previewIndicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
-                                <a class="slds-tabs--path__link" id="tabs-path-2328" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
-                                  <span class="slds-tabs--path__stage">
-                                    <lightning:icon iconName="utility:check  " size="x-small" alternativeText="Indicates approval"/>
-                                  </span>
-                                  <span class="slds-tabs--path__title">Review</span>
-                                </a>
-                              </li>
-                              <li aura:id="confirmIndicator" class="slds-tabs--path__item slds-is-incomplete" role="presentation">
-                                <a class="slds-tabs--path__link" id="tabs-path-2328" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
-                                  <span class="slds-tabs--path__stage">
-                                    <lightning:icon iconName="utility:check  " size="x-small" alternativeText="Indicates approval"/>
-                                  </span>
-                                  <span class="slds-tabs--path__title">Result</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                
+                <!-- Progress Bar -->
+                <lightning:progressIndicator aura:id="progress" currentStep="{!v.progressStep}" type="path" hasError="false" variant="base">
+                  <lightning:progressStep label="Details" value="1"/>
+                  <lightning:progressStep label="Edit" value="2"/>
+                  <lightning:progressStep label="Review" value="3"/>
+                  <lightning:progressStep label="Result" value="4"/>
+              </lightning:progressIndicator>
+                      
                 
                 
             </lightning:layoutItem>

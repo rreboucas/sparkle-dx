@@ -5,7 +5,7 @@
     <design:attribute name="objectApiName" label="Enter the API name for the Object to be used in the list"/>
     <design:attribute name="eventIDField" label="Event-Broadcasting Field"/>
     <design:attribute name="fireListRecordsEvent" label="Fire List Records Event"/>
-    
+    <design:attribute name="showNewRecordButton" label="Show New Record Button"/>
     <design:attribute name="filter1_fieldapiname" label="Filter by Field"/>
     <design:attribute name="filter1_fieldValue" label="Filter Value"/>
     
@@ -18,7 +18,7 @@
     <design:attribute name="column4_headertext" label="Column 4 - Header Text"/>
     <design:attribute name="column4_fieldapiname" label="Column 4 - field API name"/>
     
-    <design:attribute name="showButton" label="Show Button"/>
+    <design:attribute name="showRowActionButtons" label="Show Row Action Buttons"/>
     <design:attribute name="buttonLabel" label="Enter the Button Label"/>
     <design:attribute name="buttonURL" label="Button URL"/>
     

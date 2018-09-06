@@ -78,12 +78,14 @@
             
             component.set("v.isDoneRendering", true);
             
-            
-            // Fire standard ltng:selectSobject event:
+           
+                 // Fire standard ltng:selectSobject event:
             var stdAppEvent = $A.get("e.ltng:selectSObject");
     
             stdAppEvent.setParams({ "recordId": arr[0].eventField, "channel": "Project Sparkle Interview List LC" });
             stdAppEvent.fire();
+            
+           
 
         }
         

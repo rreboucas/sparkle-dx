@@ -1,0 +1,30 @@
+
+<!--
+  Copyright (c) 2018, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+
+<aura:component controller="RecordsStores" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	
+    
+    <aura:attribute name="location" type="SObject"/>
+    <aura:attribute name="jsLoaded" type="boolean" default="false"/>
+    
+    <aura:attribute name="properties" type="Sobject"/>
+    
+    <aura:attribute name="mapLoaded" type="boolean" default="false"/>
+    <aura:attribute name="nearest_store" type="SObject"/>
+    <aura:attribute name="horizontalChart" type="Object" />
+    
+    
+ 
+    
+    
+    <div class="slds-grid slds-wrap">
+        <div aura:id="map_container" class="map_container slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--6-of-12">
+            <div id="map" style="height:350px;"></div>
+        </div>
+    </div>
+</aura:component>

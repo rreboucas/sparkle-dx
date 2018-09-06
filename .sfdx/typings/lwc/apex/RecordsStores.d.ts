@@ -1,3 +1,3 @@
-declare module "@apex/RecordsStores.getAllredcords" {
-  export function getAllredcords(): Promise<any>;
+declare module "@salesforce/apex/RecordsStores.getAllredcords" {
+  export default function getAllredcords(): Promise<any>;
 }

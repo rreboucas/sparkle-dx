@@ -8,6 +8,40 @@
 .THIS {
 }
 
+.THIS .imageSize {
+    display: block;
+    max-width:230px;
+    width: auto;
+    height: auto;
+    border: 5px solid rgb(243, 242, 242);
+    border-radius: 50%;
+  }
+
+  .THIS .imgColumn {
+    background-color: rgb(242, 253, 254);
+  }
+
+  .THIS .borderOn {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .THIS .icons {
+    
+  }
+
+  .THIS .metrics {
+    text-align:start;
+  }
+
+  .THIS .infoColumn {
+    background-color: rgba(245, 245, 245, 0.488);
+  }
+
+  .THIS .tweetColumn {
+    background-color: rgb(242, 253, 254);
+  }
+
 .THIS .xc-hidden {
    display:none !important;
  }

@@ -1,0 +1,34 @@
+[
+    {
+        "sobject": "Position__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Position__cs.json"
+        ]
+    },
+    {
+        "sobject": "Candidate__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Candidate__cs.json"
+        ]
+    },
+    {
+        "sobject": "Interview__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Interview__cs.json"
+        ]
+    },
+    {
+        "sobject": "Referral__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Referral__cs.json"
+        ]
+    }
+]

@@ -28,8 +28,13 @@
             // you should run an isValid() check
             //if (cmp.isValid() && state === "SUCCESS") {
             if (state === "SUCCESS") {
+                
+
                 cmp.set("v.rec", response.getReturnValue());
-				cmp.set("v.hasRecords", true);
+                cmp.set("v.hasRecords", true);
+                
+                var spinner = cmp.find("mySpinner");
+                $A.util.addClass(spinner, "slds-hide");
             }
             //else if (cmp.isValid() && state === "INCOMPLETE") {
             else if (state === "INCOMPLETE") {

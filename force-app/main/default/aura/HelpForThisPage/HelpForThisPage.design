@@ -1,0 +1,14 @@
+<design:component >
+        <design:attribute name="helpsection1_title" label="Title for Help Section 1"/>
+        <design:attribute name="helpsection1_p1" label="Paragraph 1 Text - Help Section 1"/>
+        <design:attribute name="helpsection1_p2" label="Paragraph 2 Text - Help Section 1"/>
+        <design:attribute name="helpsection1_p3" label="Paragraph 3 Text - Help Section 1"/>
+        <design:attribute name="helpsection2_title" label="Title for Help Section 2"/>
+        <design:attribute name="helpsection2_p1" label="Paragraph 1 Text - Help Section 2"/>
+        <design:attribute name="helpsection2_p2" label="Paragraph 2 Text - Help Section 2"/>
+        <design:attribute name="helpsection2_p3" label="Paragraph 3 Text - Help Section 2"/>
+        <design:attribute name="helpsection3_title" label="Title for Help Section 3"/>
+        <design:attribute name="helpsection3_p1" label="Paragraph 1 Text - Help Section 3"/>
+        <design:attribute name="helpsection3_p2" label="Paragraph 2 Text - Help Section 3"/>
+        <design:attribute name="helpsection3_p3" label="Paragraph 3 Text - Help Section 3"/>
+</design:component>

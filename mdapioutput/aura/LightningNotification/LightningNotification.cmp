@@ -1,0 +1,39 @@
+
+<!--
+  Copyright (c) 2018, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+
+<aura:component controller="AsyncNotificationController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<ltng:require scripts="{!$Resource.cometd}" afterScriptsLoaded="{!c.onCometdLoaded}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="notifications" type="Object[]"/>
+    <aura:attribute name="sessionId" type="String"/>
+    <aura:attribute name="cometd" type="Object"/>
+    <aura:attribute name="cometdSubscriptions" type="Object[]"/>    
+        
+        
+        
+        <div class="c-container">
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    Test Platform Events Component
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    <lightning:button variant="brand" label="Run Async Job" onclick="{! c.handleClick }" />
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+	 
+	
+    
+    
+</aura:component>

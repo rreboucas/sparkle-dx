@@ -25,7 +25,8 @@
     <aura:attribute name="sortDirection" type="String" access="global"/>
     <aura:attribute name="lastSortFieldName" type="String" access="global"/>
     <aura:attribute name="lastSortDirection" type="String" access="global"/>
-    <aura:attribute name="showButton" type="Boolean" default="True" access="global"/>
+    <aura:attribute name="showRowActionButtons" type="Boolean" default="True" access="global"/>
+    <aura:attribute name="showNewRecordButton" type="Boolean" default="True" access="global"/>
     <aura:attribute name="buttonLabel" type="String" default="Start" access="global"/>
     <aura:attribute name="buttonURL" type="String" access="global"/>
     <aura:attribute name="buttonURLParameter" type="String" access="global"/>
@@ -62,6 +63,7 @@
                 </div>
                 <div class="slds-col slds-no-flex slds-align-bottom">
                     <div class="slds-grid">
+                            <aura:renderIf isTrue="{!v.showNewRecordButton}"> 
                         <div class="slds-button-space-left">
                         </div>
                         <div class="slds-button-group slds-button-space-left" role="group">
@@ -73,6 +75,7 @@
                                 <button class="slds-button slds-button--neutral" onclick="{!c.CreateNewRecord}">New</button>
                             </div>
                         </div>
+                    </aura:renderIf>
                     </div>
                 </div>
             </div>
@@ -136,7 +139,7 @@
                         <td class="slds-truncate sizehidden" aura:id="col2Row">{!rec.column2}</td>
                         <td class="sizehidden" aura:id="col3Row" >{!rec.column3}</td>
                         <td class="sizehidden" aura:id="col4Row" >{!rec.column4}</td>
-                        <aura:renderIf isTrue="{!v.showButton}">
+                        <aura:renderIf isTrue="{!v.showRowActionButtons}">
                             
                             <td class="" aura:id="colButtonRow">                    
                                 

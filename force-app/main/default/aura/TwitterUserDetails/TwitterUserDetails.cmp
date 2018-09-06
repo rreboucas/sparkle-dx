@@ -14,69 +14,81 @@
 	<aura:attribute name="hasRecords" type="Boolean" default="false" access="global"/>    
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" access="global"/>
     <aura:handler event="c:TwitterRecordEvent" action="{!c.handleApplicationEvent}" access="global"/>
-    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
-    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
-    <ltng:require styles="/resource/SLDS0103/assets/styles/salesforce-lightning-design-system-ltng.css" />
+
+
 
     <div class="slds slds-is-relative" style="padding-top: 0.5%;padding-right: 0.5%;padding-bottom: 0.5%; padding-left: 0.5%;">
-        <div aura:id="xi-spinner" class="xc-hidden" style="padding-top: 4px;">
-        <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
-            <div class="slds-spinner__dot-a"></div>
-            <div class="slds-spinner__dot-b"></div>
-        </div>
-    </div>  
 
-	<aura:if isTrue="{!v.hasRecords}">	
-        <div class="slds-grid slds-grid--align-left">
-            <div class="smallFit info-mediumFit info-largeFit info-xlargeFit" style="">
-            
-                <div class="slds-media slds-media--responsive" style="min-width: 70%; padding-top: 8px;">
-                <div class="slds-media__figure" style="padding-top: 2%;">
-                  <img src="{!v.rec.pictureUrl}" class="slds-avatar--large" style="border-radius: 7px;" alt="Placeholder" />
-                </div>
-                <div class="slds-media__body" style="min-width: 300px;">
-                      <!--<p>{!v.rec.twitterName}</p> -->
-                    <div class="slds-grid">
-                        <div class="iconsDiv"> <img src="{!$Resource.SLDS0103 + '/assets/icons/utility/home_60.png'}" style="width: 12px;height: 10px; padding-right:1px;"/></div>
-                                                                                                                                                                                                 
-                        <div class="numberDiv">{!v.rec.location}</div>
-                    </div>
+                <lightning:spinner aura:id="mySpinner" variant="brand" size="large"/>
+    
+	<aura:if isTrue="{!v.hasRecords}">
+        
 
-                    <div class="slds-grid">
-                        <div class="iconsDiv"><img src="{!$Resource.SLDS0103 + '/assets/icons/utility/people_60.png'}" style="width: 12px;height: 10px; padding-right:1px;"/></div>
-                        <div class="numberDiv">Followers: {!v.rec.numFollowers} </div>
-                    </div>
-                    <div class="slds-grid">
-                        <div class="iconsDiv"><img src="{!$Resource.SLDS0103 + '/assets/icons/utility/adduser_60.png'}" style="width: 12px;height: 10px; padding-right:1px;"/> </div>
-                        <div class="numberDiv"> Follows: {!v.rec.follows}</div>
-                    </div>
+            <lightning:layout multipleRows="true">
                     
-                      
-                    </div>
-               </div>
-            
-            </div>
-            <div class="smallFit tweet-mediumFit tweet-largeFit tweet-xlargeFit" style=" max-width: 350px; padding-left: 2%;">
+                    <lightning:layoutItem size="12">
+                        <lightning:layout horizontalAlign="spread">
+                            <lightning:layoutItem class="imgColumn" padding="around-small" size="1" largeDeviceSize="3" mediumDeviceSize="2" smallDeviceSize="12">
+                                
+                                    <lightning:avatar size="large" class="imageSize" variant="circle" src="{!v.rec.pictureUrl}" initials="IM" fallbackIconName="standard:avatar" alternativeText="Twitter Profile Image"/> 
 
-                    <div style="" >
-                    	<img src="{!$Resource.lightningicons + '/lightningicons/images/Twitter_logo_blue.png'}" style="width: 12px;height: 10px; padding-right:1px;"/>
-                    </div>
-                    <div style=""> 
-                        <div style="font-size: xx-small">{!v.rec.tweetDate}</div>
-                </div>
-                <div class="slds-grid slds-grid--align-left">
-                    <div class="slds-col slds-size--1-of-1">
-                        
-                        <span style="padding-right:6px;">
-                        <a  onclick="{!c.OpenTweet}">{!v.rec.tweetText} </a></span>
-                    </div>
-                </div>
-                <!--<ui:button press="{!c.pressButton}">
-                    <div auraid="myButton" class="testClass"> Click Me</div>
-                </ui:button> -->
+                            </lightning:layoutItem>
+                            <lightning:layoutItem class="infoColumn" padding="around-small" size="1" largeDeviceSize="3" mediumDeviceSize="4" smallDeviceSize="12">
 
-            </div>
-        </div>
+                                    <lightning:layout horizontalAlign="spread" verticalAlign="center" class="x-large" >
+                                            <lightning:layoutItem class="icons" flexibility="auto" padding="around-small">
+                                                    <lightning:icon size="x-small" iconName="utility:home" alternativeText="home" variant="home"/>
+                                            </lightning:layoutItem>
+                                            <lightning:layoutItem class="metrics" flexibility="grow" padding="around-small">
+                                                <div class="custom-box">{!v.rec.location}</div>
+                                            </lightning:layoutItem>
+                                    </lightning:layout>
+
+                                    <lightning:layout horizontalAlign="spread" verticalAlign="center" class="x-large">
+                                            <lightning:layoutItem class="icons" flexibility="auto" padding="around-small">
+                                                    <lightning:icon size="x-small" iconName="utility:people" alternativeText="followers" variant="followers"/>
+                                            </lightning:layoutItem>
+                                            <lightning:layoutItem class="metrics" flexibility="grow" padding="around-small">
+                                                <div class="custom-box">Followers: {!v.rec.numFollowers}</div>
+                                            </lightning:layoutItem>
+                                    </lightning:layout>
+
+                                    <lightning:layout horizontalAlign="spread" verticalAlign="center" class="x-large">
+                                            <lightning:layoutItem class="icons" flexibility="auto" padding="around-small">
+                                                    <lightning:icon size="x-small" iconName="utility:people" alternativeText="followers" variant="followers"/>
+                                            </lightning:layoutItem>
+                                            <lightning:layoutItem class="metrics" flexibility="grow" padding="around-small">
+                                                <div class="custom-box">Follows: {!v.rec.numFollowers}</div>
+                                            </lightning:layoutItem>
+                                    </lightning:layout>
+
+                            </lightning:layoutItem>
+                            <lightning:layoutItem class="tweetColumn" padding="around-small" size="1" largeDeviceSize="6" mediumDeviceSize="5" smallDeviceSize="12">
+                                <div class="page-section page-right">
+                                        <lightning:layout pullToBoundary="small" horizontalAlign="end" verticalAlign="center" class="x-small">
+                                                <lightning:layoutItem class="" flexibility="auto" padding="around-small" size="1">
+                                                        <lightning:avatar size="x-small" variant="circle" src="{!$Resource.lightningicons + '/lightningicons/images/Twitter_logo_blue.png'}" initials="TW" fallbackIconName="standard:avatar" alternativeText="Twitter Logo"/>
+                                                </lightning:layoutItem>
+                                                <lightning:layoutItem class="" flexibility="auto" padding="around-small" size="11">
+                                                        {!v.rec.tweetDate}
+                                                </lightning:layoutItem>
+                                        </lightning:layout>
+                                        <lightning:layout pullToBoundary="small" horizontalAlign="end" verticalAlign="center" class="x-small">
+                                                <lightning:layoutItem class="" flexibility="auto" padding="around-small" size="12">
+                                                        <a  onclick="{!c.OpenTweet}">{!v.rec.tweetText} </a>
+                                                </lightning:layoutItem>
+                                                
+                                        </lightning:layout>
+
+
+                                </div>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                    </lightning:layoutItem>
+                    
+                </lightning:layout>
+
+
         </aura:if>
     </div>
 	

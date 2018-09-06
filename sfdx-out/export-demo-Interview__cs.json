@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Interview__c",
+                "referenceId": "Interview__cRef1"
+            },
+            "Interview_Date__c": "2023-09-20T19:00:00.000+0000",
+            "Interview_Type__c": "Recruiter Interview",
+            "Status__c": "Pending",
+            "Candidate__c": "@Candidate__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Interview__c",
+                "referenceId": "Interview__cRef2"
+            },
+            "Interview_Date__c": "2023-09-20T19:00:00.000+0000",
+            "Interview_Type__c": "Recruiter Interview",
+            "Status__c": "Pending",
+            "Candidate__c": "@Candidate__cRef2"
+        },
+        {
+            "attributes": {
+                "type": "Interview__c",
+                "referenceId": "Interview__cRef3"
+            },
+            "Interview_Date__c": "2023-09-20T19:00:00.000+0000",
+            "Interview_Type__c": "Recruiter Interview",
+            "Status__c": "Pending",
+            "Candidate__c": "@Candidate__cRef3"
+        }
+    ]
+}

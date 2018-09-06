@@ -1,0 +1,14 @@
+.THIS .notUploading {
+    visibility: hidden;
+}
+
+.THIS .uploading {
+    visibility: visible;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.THIS .file {
+    margin-bottom: 5px;
+    display: block;
+}

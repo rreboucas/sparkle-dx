@@ -33,15 +33,6 @@
         
 	},
 
-    showSpinner : function (component, event, helper) {
-        var spinner = component.find('xi-spinner');
-        $A.util.removeClass(spinner, "xc-hidden");    
-    },
-    
-    hideSpinner : function (component, event, helper) {
-       var spinner = component.find('xi-spinner');
-       $A.util.addClass(spinner, "xc-hidden");   
-    },
     
     pressButton : function(component, event, helper) {
         
@@ -60,6 +51,11 @@
     handleApplicationEvent : function(component, event, helper) {
         
         $A.log("TwitterUserDetailsController.handleApplicationEvent: entered");
+
+
+        var spinner = component.find("mySpinner");
+        $A.util.removeClass(spinner, "slds-hide");
+
         component.set("v.rec", null);
         var params = event.getParams();
         component.set("v.record", params.recordDetails);

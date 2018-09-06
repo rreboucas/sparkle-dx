@@ -1,3 +1,3 @@
-declare module "@apex/FilesViewerServerController.getListRecords" {
-  export function getListRecords(param: {recordID: any, rowsLimit: any}): Promise<any>;
+declare module "@salesforce/apex/FilesViewerServerController.getListRecords" {
+  export default function getListRecords(param: {recordID: any, rowsLimit: any}): Promise<any>;
 }

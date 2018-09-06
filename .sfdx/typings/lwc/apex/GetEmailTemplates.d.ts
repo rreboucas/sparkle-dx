@@ -1,3 +1,3 @@
-declare module "@apex/GetEmailTemplates.getTemplates" {
-  export function getTemplates(): Promise<any>;
+declare module "@salesforce/apex/GetEmailTemplates.getTemplates" {
+  export default function getTemplates(): Promise<any>;
 }

@@ -1,0 +1,14 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Position__c",
+                "referenceId": "Position__cRef1"
+            },
+            "Name": "Software Architect",
+            "Fullfilment_Date_Limit__c": "2035-09-12",
+            "Level__c": "Engineer",
+            "Status__c": "Open"
+        }
+    ]
+}

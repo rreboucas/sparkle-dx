@@ -1,0 +1,11 @@
+.THIS {
+    background-color: #ffbfbf;
+}
+
+.THIS .slds-badge {
+    padding-bottom: 1%;
+    background-color: black;
+    border-radius: 25rem;
+    color: white;
+    font-size: .725rem;
+}

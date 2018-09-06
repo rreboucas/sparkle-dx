@@ -1,3 +1,4 @@
+
 ({
 	getListRecords : function(cmp) {
     console.log("RecordTimelineHelper.getListRecords: entered");    

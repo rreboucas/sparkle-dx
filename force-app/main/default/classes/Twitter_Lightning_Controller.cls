@@ -185,11 +185,14 @@ public with sharing class Twitter_Lightning_Controller {
         String oauthVersion = '1.0';
         
 // Get the Twitter App Access token from the Twitter Users Custom Setting: 
+        TwitterApp__mdt twitterAppCred = [SELECT Token__c, Token_Secret__c FROM TwitterApp__mdt limit 1];
 
-        Twitter_User__c myCS1 = Twitter_User__c.getValues('TwitterApp');
-        String oauthConsumerKey = myCS1.Token__c;        
-        String oauthConsumerSecret = myCS1.Token_Secret__c;
+        String oauthConsumerKey = twitterAppCred.Token__c;        
+        String oauthConsumerSecret = twitterAppCred.Token_Secret__c;
         
+        System.debug('#### oauthConsumerKey: '+ oauthConsumerKey );
+        System.debug('#### oauthConsumerSecret: '+ oauthConsumerSecret );
+
         String baseUrl = 'https://api.twitter.com';
         String oauthSignatureMethod = 'HMAC-SHA1';
         String strTwitterId = '';
@@ -339,9 +342,10 @@ public with sharing class Twitter_Lightning_Controller {
 
         // Get the Twitter App Access token from the Twitter Users Custom Setting:
 
-        Twitter_User__c myCS1 = Twitter_User__c.getValues('TwitterApp');
-        String oauthConsumerKey = myCS1.Token__c;        
-        String oauthConsumerSecret = myCS1.Token_Secret__c;
+        TwitterApp__mdt twitterAppCred = [SELECT Token__c, Token_Secret__c FROM TwitterApp__mdt limit 1];
+
+        String oauthConsumerKey = twitterAppCred.Token__c;        
+        String oauthConsumerSecret = twitterAppCred.Token_Secret__c;
 
         String baseUrl = 'https://api.twitter.com';
         String oauthSignatureMethod = 'HMAC-SHA1';

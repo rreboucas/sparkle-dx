@@ -1,6 +1,6 @@
-declare module "@apex/AsyncNotificationController.getSessionId" {
-  export function getSessionId(): Promise<any>;
+declare module "@salesforce/apex/AsyncNotificationController.getSessionId" {
+  export default function getSessionId(): Promise<any>;
 }
-declare module "@apex/AsyncNotificationController.RunInstantToast" {
-  export function RunInstantToast(): Promise<any>;
+declare module "@salesforce/apex/AsyncNotificationController.RunInstantToast" {
+  export default function RunInstantToast(): Promise<any>;
 }
