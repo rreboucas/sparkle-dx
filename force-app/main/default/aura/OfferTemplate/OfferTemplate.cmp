@@ -18,6 +18,11 @@
     <aura:attribute name="templateVal" type="String" access="global" />
     <ltng:require styles="{!$Resource.sendoffer}"/>
     <aura:attribute name="templateSubjectVal" type="String" />
+    <aura:attribute name="AttachFile" type="Boolean" default="false" access="global" />
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'Attach a File', 'value': 'AttachFile'}
+    ]"/>
+    <aura:attribute name="value" type="List"/>
     <aura:handler event="c:CandidateDetailEvent" action="{!c.handleApplicationEvent}"/>
     <aura:registerEvent name="bubblingEvent" type="c:OfferSPANotifierEvent" /> 
     
@@ -30,11 +35,21 @@
     label="Offer Text" />
     </div>    
 
-    <div>    
-        <lightning:buttonGroup >
-            <lightning:button label="Back" onclick="{!c.goBack}" />
-            <lightning:button label="Next" onclick="{!c.goNext}" />
-        </lightning:buttonGroup>
+    <div>
+            <lightning:layout horizontalAlign="space">
+                    <lightning:layoutItem padding="around-small" size="4">
+                        <lightning:buttonGroup >
+                            <lightning:button label="Back" onclick="{!c.goBack}" />
+                            <lightning:button label="Next" onclick="{!c.goNext}" />
+                        </lightning:buttonGroup>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem padding="around-small" size="8">
+                            <lightning:checkboxGroup name="Checkbox Group"
+                            options="{! v.options }"
+                            value="{! v.value }"
+                            onchange="{! c.handleChange }"/>
+                    </lightning:layoutItem>
+        </lightning:layout>
     </div>
     </div>
 	

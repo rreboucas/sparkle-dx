@@ -19,7 +19,7 @@
         {
             "attributes": {
                 "type": "Referral__c",
-                "referenceId": "Referral__cRef1"
+                "referenceId": "Referral__cRef3"
             },
             "Referral_Message__c": "I recommend this candidate!",
             "Candidate__c": "@Candidate__cRef2"
@@ -27,7 +27,7 @@
         {
             "attributes": {
                 "type": "Referral__c",
-                "referenceId": "Referral__cRef2"
+                "referenceId": "Referral__cRef4"
             },
             "Referral_Message__c": "I highly recommend!",
             "Candidate__c": "@Candidate__cRef2"
@@ -35,7 +35,7 @@
         {
             "attributes": {
                 "type": "Referral__c",
-                "referenceId": "Referral__cRef1"
+                "referenceId": "Referral__cRef5"
             },
             "Referral_Message__c": "I recommend this candidate!",
             "Candidate__c": "@Candidate__cRef3"
@@ -43,7 +43,7 @@
         {
             "attributes": {
                 "type": "Referral__c",
-                "referenceId": "Referral__cRef2"
+                "referenceId": "Referral__cRef6"
             },
             "Referral_Message__c": "I highly recommend!",
             "Candidate__c": "@Candidate__cRef3"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="dynamiclist_listview">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+  <masterLabel>Dynamic List - Loads records defined on ListViews</masterLabel>
+  <description>This is a demo component.</description>
+  <targets>
+      <target>lightning__RecordPage</target>
+      <target>lightning__AppPage</target>
+      <target>lightning__HomePage</target>
+  </targets>
+  <targetConfigs>
+      <targetConfig targets="lightning__RecordPage,lightning__AppPage">
+           <property name="headerText" label="Enter the List Header Text" type="String" default="Records List" />
+            <!--<property name="objectName" label="Enter the API Name of the Object to load Records" type="String" default="Account"/> -->
+             <property name="objectName" label="Select the Object to load Records" type="String" datasource="apex://SparkleActionListObjectPickList" default="Account"/>
+            <property name="listViewSelected" label="Enter the API Name of the List View to load Records" type="String" default="All"/>
+            <!-- <property name="listViewSelected" label="Select the List View to load Records" type="String" datasource="apex://SparkleActionListViewPicklist"/> -->
+      </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

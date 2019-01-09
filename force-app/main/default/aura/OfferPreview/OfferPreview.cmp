@@ -12,19 +12,37 @@
     <aura:attribute name="templateSubjectVal" type="String" />
     <aura:attribute name="offerId" type="String" access="global" />
     <aura:attribute name="email" type="String" access="global" />
+
+    <aura:attribute name="showAttachmentLC" type="Boolean" default="false"/>
+
     <aura:handler event="c:CandidateDetailEvent" action="{!c.handleApplicationEvent}"/>
     <aura:registerEvent name="bubblingEvent" type="c:OfferSPANotifierEvent" /> 
     <ltng:require styles="{!$Resource.sendofferReadOnly}"/>
     <div>
     
-    <div>    
+    <div> 
+        <aura:if isTrue="{!v.showAttachmentLC}">
+        
+            <!-- Render File Upload Child Component only if condition is true-->
 
-           <div class="sendofferReadOnly"> 
-                <lightning:input disabled="true" readonly="true"  label="Subject" name="myname" aura:id="txtSubject" value="{!v.templateSubjectVal}" />
-                <br/>
-                <lightning:textarea disabled="true"  readonly="true" name="myTextArea" aura:id="txtArea" value="{!v.templateVal}" 
-            label="Offer Text" />
-          </div> 
+            <c:FlexibleFileUpload />
+
+            <aura:set attribute="else">
+
+            <!-- If Condition is not true then unhide the Offer Leter Preview Child Component which all users will need to interact with-->
+
+            <div class="sendofferReadOnly"> 
+                    <lightning:input disabled="true" readonly="true"  label="Subject" name="myname" aura:id="txtSubject" value="{!v.templateSubjectVal}" />
+                    <br/>
+                    <lightning:textarea disabled="true"  readonly="true" name="myTextArea" aura:id="txtArea" value="{!v.templateVal}" 
+                label="Offer Text" />
+            </div> 
+
+            </aura:set>
+
+        </aura:if>
+
+
     </div>    
     <br/>
     <div>    

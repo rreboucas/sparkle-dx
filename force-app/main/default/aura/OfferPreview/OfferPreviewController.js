@@ -16,11 +16,15 @@
         component.set("v.templateSubjectVal", params.offerSubject);
         component.set("v.email", params.email);
         component.set("v.offerId", params.offerId);
+        
+        
+        component.set("v.showAttachmentLC", params.AttachAFile);
 
         console.log("text = " + component.get("v.templateVal"));
         console.log("subject = " + component.get("v.templateSubjectVal"));
         console.log("email = " + component.get("v.email"));
         console.log("offerId = " + component.get("v.offerId"));
+        console.log("showAttachmentLC = " + component.get("v.showAttachmentLC"));
 
         
 

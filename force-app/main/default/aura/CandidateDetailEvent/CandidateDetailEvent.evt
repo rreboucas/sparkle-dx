@@ -22,4 +22,5 @@
     <aura:attribute name="offerText" type="String" access="global" />  
     <aura:attribute name="offerSubject" type="String" access="global" /> 
     <aura:attribute name="sendResult" type="String" access="global" />
+    <aura:attribute name="AttachAFile" type="Boolean" access="global" />
 </aura:event>

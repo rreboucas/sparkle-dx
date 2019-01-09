@@ -7,6 +7,13 @@
 */
 
 ({
+    handleChange: function (component, event) {
+        var changeValue = event.getParam("value");
+        if(changeValue == 'AttachFile')
+            component.set("v.AttachFile", true);
+        else
+            component.set("v.AttachFile", false);
+    },
     
     handleApplicationEvent : function(component, event, helper) {
         
@@ -103,6 +110,7 @@
                             "offerText": component.get("v.templateVal"),
                             "offerSubject": component.get("v.templateSubjectVal"),
                             "email": component.get("v.email"),
+                            "AttachAFile": component.get("v.AttachFile"),
                             "LCWhoFired": 'OfferTemplate.cmp'
                            });
         
