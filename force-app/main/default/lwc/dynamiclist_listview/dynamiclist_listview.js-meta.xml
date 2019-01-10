@@ -10,12 +10,10 @@
       <target>lightning__HomePage</target>
   </targets>
   <targetConfigs>
-      <targetConfig targets="lightning__RecordPage,lightning__AppPage">
+      <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
            <property name="headerText" label="Enter the List Header Text" type="String" default="Records List" />
-            <!--<property name="objectName" label="Enter the API Name of the Object to load Records" type="String" default="Account"/> -->
-             <property name="objectName" label="Select the Object to load Records" type="String" datasource="apex://SparkleActionListObjectPickList" default="Account"/>
+             <property name="objectName" label="Enter the API Name of the Object to load Records" type="String" default="Account"/>
             <property name="listViewSelected" label="Enter the API Name of the List View to load Records" type="String" default="All"/>
-            <!-- <property name="listViewSelected" label="Select the List View to load Records" type="String" datasource="apex://SparkleActionListViewPicklist"/> -->
       </targetConfig>
   </targetConfigs>
 </LightningComponentBundle>

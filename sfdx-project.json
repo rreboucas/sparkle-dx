@@ -2,10 +2,13 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "Recruitment",
+      "versionName": "Spring '19",
+      "versionNumber": "1.0.0.NEXT"
     }
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "39.0"
+  "sourceApiVersion": "45.0"
 }

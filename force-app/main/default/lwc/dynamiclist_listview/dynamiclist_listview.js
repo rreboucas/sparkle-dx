@@ -1,16 +1,8 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import { getRecord } from 'lightning-ui-api-record';
-import { getListUi } from 'lightning-ui-api-list-ui';
+import { getListUi } from 'lightning/uiListApi';
 
 import AccountNameField from '@salesforce/schema/Account.Name';
-import OfficeObject from '@salesforce/schema/Office__c';
 import Account from '@salesforce/schema/Account';
-
-import OfficeNameField from '@salesforce/schema/Office__c.Name';
-import OfficeCityField from '@salesforce/schema/Office__c.City__c';
-import OfficeStateField from '@salesforce/schema/Office__c.State__c';
-
-import saveLastObjectToLoad from '@salesforce/apex/SparkleActionsListController.saveLastObjectToLoad';
 
 /**
  * Gets a field value by recursing through spanned records.
