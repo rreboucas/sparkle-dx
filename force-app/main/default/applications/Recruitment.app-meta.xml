@@ -8,12 +8,12 @@
     <formFactors>Large</formFactors>
     <label>Recruitment</label>
     <navType>Standard</navType>
-    <tab>Interviewer_Console</tab>
-    <tab>Recruiter_Console</tab>
-    <tab>Candidate__c</tab>
-    <tab>standard-Dashboard</tab>
-    <tab>Position__c</tab>
-    <tab>Sparkle_All_LCs</tab>
+    <tabs>Interviewer_Console</tabs>
+    <tabs>Recruiter_Console</tabs>
+    <tabs>Candidate__c</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Position__c</tabs>
+    <tabs>Sparkle_All_LCs</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>recruitingApplicationUtilityBar</utilityBar>
 </CustomApplication>

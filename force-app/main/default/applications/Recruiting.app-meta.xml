@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>Position__c</defaultLandingTab>
+    <formFactors>Large</formFactors>
     <label>Recruiting</label>
-    <tab>Recruitment_Home</tab>
-    <tab>Position__c</tab>
-    <tab>Interview__c</tab>
-    <tab>Interviewer__c</tab>
-    <tab>Candidate__c</tab>
-    <tab>standard-File</tab>
-    <tab>standard-report</tab>
-    <tab>standard-Dashboard</tab>
-    <tab>Top_Recruiters</tab>
-    <tab>Referral__c</tab>
-    <tab>Invoice__c</tab>
+    <tabs>Recruitment_Home</tabs>
+    <tabs>Position__c</tabs>
+    <tabs>Interview__c</tabs>
+    <tabs>Interviewer__c</tabs>
+    <tabs>Candidate__c</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Top_Recruiters</tabs>
+    <tabs>Referral__c</tabs>
+    <tabs>Invoice__c</tabs>
 </CustomApplication>
