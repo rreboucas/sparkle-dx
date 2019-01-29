@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="interviewList_lwc">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Interview List LWC </masterLabel>
+  <description>Loads list of records for any custom Object Defined by the Admin. It also broadcast the record id on user row selection so other dependent components on the page can refresh with record scope.</description>
+  <targets>
+      <target>lightning__RecordPage</target>
+      <target>lightning__AppPage</target>
+      <target>lightning__HomePage</target>
+  </targets>
+  <targetConfigs>
+      <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+            <property name="headerText" label="Enter the List Header Text" type="String" default="Records List" />
+            <property name="objectName" label="Enter the API Name of the Object to load Records" type="String" default="Account"/>
+            <property name="numRecsDisplay" label="Enter the number of records to display on the list (between 1 and 12)" type="String" default="8"/>
+            <property name="broadcastFieldName" label="Enter the API Name of the Object field that you would like to boradcast to other LCs on the page when user selects a record" type="String" default="Id"/>
+            <property name="showNewRecButton" label="Show New Record button on header?" type="Boolean" default="true"/>
+            <property name="filterbyFieldName" label="Enter the API Name of the Object Field that you would like to filter the list by" type="String"/>
+            <property name="filterbyFieldValue" label="Enter the Value of the Object Field that you would like to filter the list by" type="String"/>
+            <property name="column1HeaderTxt" label="Column 1 Header Text" type="String" default="Name"/>
+            <property name="column1FieldAPIName" label="Column 1 Field API Name" type="String" default="Name"/>
+            <property name="column2HeaderTxt" label="Column 2 Header Text" type="String" default="Name"/>
+            <property name="column2FieldAPIName" label="Column 2 Field API Name" type="String" default="Name"/>
+            <property name="column3HeaderTxt" label="Column 3 Header Text" type="String" default="Name"/>
+            <property name="column3FieldAPIName" label="Column 3 Field API Name" type="String" default="Name"/>
+            <property name="column4HeaderTxt" label="Column 4 Header Text" type="String" default="Name"/>
+            <property name="column4FieldAPIName" label="Column 4 Field API Name" type="String" default="Name"/>
+            <property name="showRowActionButton" label="Show Action button on Rows?" type="Boolean" default="true"/>
+            <property name="sortFieldAPIName" label="Default Sort By - Field API Name" type="String" default="Name"/>
+            <property name="defaultSortDir" label="Default Sort Direction" type="String" datasource="asc,desc" />
+      </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

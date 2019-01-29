@@ -5,6 +5,12 @@
         "paths": {
             "c/dynamiclist_listview": [
                 "dynamiclist_listview/dynamiclist_listview.js"
+            ],
+            "c/interview-list_lwc": [
+                "interviewList_lwc/interviewList_lwc.js"
+            ],
+            "c/view-source": [
+                "viewSource/viewSource.js"
             ]
         }
     },

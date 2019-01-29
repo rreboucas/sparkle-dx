@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        {headerText}
+
+        <lightning-datatable show-row-number-column data={data} columns={columns} key-field="id" onrowselection={getSelectedId}></lightning-datatable>
+
+        <c-view-source source="lwc/InterviewList" slot="footer">
+            Listview custom LC. Works with any object and allows record id broadcasting to other LCs and perform actions on records via row buttons.
+        </c-view-source>
+    </lightning-card>
+</template>

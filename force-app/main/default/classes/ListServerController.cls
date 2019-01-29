@@ -19,7 +19,7 @@ public with sharing class ListServerController {
     
 
     //Use @AuraEnabled to enable client- and server-side access to the method
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static List<ListServerController> getListRecords(String rowsLimit, String objectApiName, String filter1Field, String filter1Value, String eventField, String column1, String column2, String column3, String column4, String sortField, String sortDirection) {
         
         System.debug('######## rowsLimit: ' + rowsLimit);
