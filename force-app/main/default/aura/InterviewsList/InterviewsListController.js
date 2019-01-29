@@ -40,7 +40,7 @@
             $A.util.addClass(toggleRow,'toggle');
         }
         
-        var showButton = component.get("v.showButton") ;
+        var showButton = component.get("v.showRowActionButtons") ;
         if (showButton == false)
         {
             var toggleText = component.find("colButton");
