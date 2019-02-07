@@ -1,5 +1,8 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import findListRecords from '@salesforce/apex/ListServerController.getListRecords';
+import { getRecordUi } from 'lightning/uiRecordApi';
+import findListRecords from '@salesforce/apex/ListServerController_IdsOnly.getListRecordsIds';
+import { tableHelper } from 'c/dataTableHelper';
+import { logger } from 'c/lwcLogger';
 
 /**
  * Gets a field value by recursing through spanned records.
@@ -37,14 +40,100 @@ export default class InterviewList extends LightningElement {
     @api sortFieldAPIName;
     @api defaultSortDir;
 
-    @track message;
+    @track apexMessage;
+    @track ldsMessage;
     @track columns;
     @track data;
+    @track rawRecords;
+    @track rawData;
+    @track ldsRecords;
+    @track idsReturned;
+    @track recordIds;
+    @track retMap;
 
-// rowsLimit: '$numRecsDisplay', objectApiName: '$objectName',  filter1Field: '$filterbyFieldName', filter1Value: '$filterbyFieldValue', eventField: '$broadcastFieldName', column1: '$column1FieldAPIName', column2: '$column2FieldAPIName', column3: '$column3FieldAPIName', column4: '$column4FieldAPIName', sortField: '$sortFieldAPIName', sortDirection: '$defaultSortDir'
 
-    @wire(findListRecords, { rowsLimit: '8', objectApiName: 'Candidate__c',  filter1Field: '', filter1Value: '', eventField: 'Id', column1: 'Name', column2: 'Name', column3: '', column4: '', sortField: 'Name', sortDirection: 'asc'})
-                            wiredList;
+    recordIds = undefined;
+
+    //objectApiName: '$objectName', filter1Field: '$filterbyFieldName', filter1Value: '$filterbyFieldValue'
+
+    @wire(findListRecords, {objectApiName: 'Candidate__c', filter1Field: null, filter1Value: null})
+                            recordsReturned({ data, error }) {
+                                if (error) {
+                                    this.apexMessage = error.errorCode + ' - ' + error.message;
+                                    this.apexData = undefined;
+                                } else if (data) {
+                                    this.apexMessage = undefined;
+                                    this.recordIds = data;
+                                    logger(true, 'interviewList_lwc', 'this.recordIds', this.recordIds);
+                                    
+                                    /*
+                                    for (i = 0; i < apexData.length; i++){
+                                        this.idsReturned += '\'' + apexData[i] + '\'';
+                                        if (i < apexData.length - 1)
+                                            this.idsReturned += ',';
+                                    }
+                                    */
+                                    
+                                    
+                                }
+                            }
+
+
+                                
+    @wire(getRecordUi, { 
+        recordIds: '$recordIds',
+        layoutTypes: ['Full'],
+        modes: ['View'] })
+        retList({ data, error }) {
+            if (error) {
+                if (Array.isArray(error.body)) {
+                    this.ldsMessage = error.body.map(e => e.message);
+                } else if (error.body && typeof error.body.message === 'string') {
+                    this.ldsMessage = error.body.message;
+                } else {
+                    this.ldsMessage = 'Unknown error';
+                }
+                this.columns = undefined;
+                this.data = undefined;
+            } else if (data) {
+                this.ldsMessage = undefined;
+                this.rawData = data;
+                logger(true, 'interviewList_lwc', 'this.rawData', this.rawData);
+
+                this.columns = [
+                    {label: 'Name', fieldName: 'Name', type: 'text'},
+                    {label: 'Twitter', fieldName: 'Twitter_ID__c', type: 'text'},
+                    {label: 'State', fieldName: 'State__c', type: 'text'},
+                    {label: 'Position', fieldName: 'Position__r', type: 'text'},
+               ];
+
+                
+
+                // extract the row data
+                this.rawRecords = tableHelper(
+                    this.columns.map(x => x.fieldName),
+                    this.rawData,
+                );
+
+                this.data = this.rawRecords.data;
+                logger(true, 'interviewList_lwc', 'this.data', this.data);
+                /*
+                this.retMap = Object.values(data.records);
+                this.data = this.retMap.map( record => {
+                    return this.retMap.fields;
+                },
+                { id: record.id },
+
+
+
+                );*/
+
+
+                
+            }
+        }
+                            
+
 
                             getSelectedId(event) {
                                 const selectedRows = event.target.selectedRows;

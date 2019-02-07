@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/interview-list": [
+                "InterviewList/InterviewList.js"
+            ],
             "c/dynamiclist_listview": [
                 "dynamiclist_listview/dynamiclist_listview.js"
             ],
@@ -11,6 +14,12 @@
             ],
             "c/view-source": [
                 "viewSource/viewSource.js"
+            ],
+            "c/data-table-helper": [
+                "dataTableHelper/dataTableHelper.js"
+            ],
+            "c/lwc-logger": [
+                "lwcLogger/lwcLogger.js"
             ]
         }
     },
