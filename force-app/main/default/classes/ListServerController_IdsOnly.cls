@@ -7,6 +7,8 @@ public with sharing class ListServerController_IdsOnly {
 
         // CRUD / FLS Check - Create a map with the object names and fields for CRUD\FLS check
         System.debug('#########Entered getListRecordsIds');
+         System.debug('######### filter1Field' + filter1Field);
+          System.debug('######### filter1Value' + filter1Value);
         mapObjectsFields = new Map<String, Set<String>>();
         Sparkle_Helper.AddFieldToObjectsMap('Id', objectApiName, mapObjectsFields);
 
@@ -20,7 +22,7 @@ public with sharing class ListServerController_IdsOnly {
         soql += ' FROM ' + String.escapeSingleQuotes(objectApiName);
 
         // Add Filter Where clause if provided
-        if (filter1Field != null && filter1Value != null)
+        if (filter1Field != null &&  filter1Value != null)
         {
             soql += ' where ' + String.escapeSingleQuotes(filter1Field)  + ' = \'' + String.escapeSingleQuotes(filter1Value) +'\'';
             Sparkle_Helper.AddFieldToObjectsMap(filter1Field, objectApiName, mapObjectsFields);

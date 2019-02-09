@@ -4,18 +4,12 @@ import findListRecords from '@salesforce/apex/ListServerController_IdsOnly.getLi
 import { tableHelper } from 'c/dataTableHelper';
 import { logger } from 'c/lwcLogger';
 
-/**
- * Gets a field value by recursing through spanned records.
- * @param {Object} record The record holding the field.
- * @param {string[]} field Field to retrieve.
- */
-function getFieldValue(record, field) {
-    const f = field.shift();
-    const value = record.fields[f].value;
-    if (field.length === 0) {
-        return value;
+
+function setEmptyVars(value) {
+    if (value === undefined) {
+        return null;
     }
-    return getFieldValue(value, field);
+    return value;
 }
 
 export default class InterviewList extends LightningElement {
@@ -26,8 +20,19 @@ export default class InterviewList extends LightningElement {
     @api numRecsDisplay;
     @api broadcastFieldName;
     @api showNewRecButton;
-    @api filterbyFieldName;
-    @api filterbyFieldValue;
+    @api
+    get filterbyFieldName() {
+        if (this._filterbyFieldName === undefined)
+            return null;
+        return this._filterbyFieldName;
+    }
+    @api
+    get filterbyFieldValue() {
+        if (this._filterbyFieldValue === undefined)
+            return null;
+        return this._filterbyFieldValue;
+    }
+
     @api column1HeaderTxt;
     @api column1FieldAPIName;
     @api column2HeaderTxt;
@@ -53,10 +58,11 @@ export default class InterviewList extends LightningElement {
 
 
     recordIds = undefined;
+    
 
     //objectApiName: '$objectName', filter1Field: '$filterbyFieldName', filter1Value: '$filterbyFieldValue'
 
-    @wire(findListRecords, {objectApiName: 'Candidate__c', filter1Field: null, filter1Value: null})
+    @wire(findListRecords, {objectApiName: '$objectName', filter1Field: '$filterbyFieldName', filter1Value: '$filterbyFieldValue'})
                             recordsReturned({ data, error }) {
                                 if (error) {
                                     this.apexMessage = error.errorCode + ' - ' + error.message;
@@ -66,13 +72,7 @@ export default class InterviewList extends LightningElement {
                                     this.recordIds = data;
                                     logger(true, 'interviewList_lwc', 'this.recordIds', this.recordIds);
                                     
-                                    /*
-                                    for (i = 0; i < apexData.length; i++){
-                                        this.idsReturned += '\'' + apexData[i] + '\'';
-                                        if (i < apexData.length - 1)
-                                            this.idsReturned += ',';
-                                    }
-                                    */
+                                
                                     
                                     
                                 }
@@ -117,18 +117,7 @@ export default class InterviewList extends LightningElement {
 
                 this.data = this.rawRecords.data;
                 logger(true, 'interviewList_lwc', 'this.data', this.data);
-                /*
-                this.retMap = Object.values(data.records);
-                this.data = this.retMap.map( record => {
-                    return this.retMap.fields;
-                },
-                { id: record.id },
-
-
-
-                );*/
-
-
+                
                 
             }
         }

@@ -16,8 +16,8 @@
             <property name="numRecsDisplay" label="Enter the number of records to display on the list (between 1 and 12)" type="String" default="8"/>
             <property name="broadcastFieldName" label="Enter the API Name of the Object field that you would like to boradcast to other LCs on the page when user selects a record" type="String" default="Id"/>
             <property name="showNewRecButton" label="Show New Record button on header?" type="Boolean" default="true"/>
-            <property name="filterbyFieldName" label="Enter the API Name of the Object Field that you would like to filter the list by" type="String"/>
-            <property name="filterbyFieldValue" label="Enter the Value of the Object Field that you would like to filter the list by" type="String"/>
+            <property name="filterbyFieldName" label="Enter the API Name of the Object Field that you would like to filter the list by"  type="String"/>
+            <property name="filterbyFieldValue" label="Enter the Value of the Object Field that you would like to filter the list by"  type="String"/>
             <property name="column1HeaderTxt" label="Column 1 Header Text" type="String" default="Name"/>
             <property name="column1FieldAPIName" label="Column 1 Field API Name" type="String" default="Name"/>
             <property name="column2HeaderTxt" label="Column 2 Header Text" type="String" default="Name"/>
