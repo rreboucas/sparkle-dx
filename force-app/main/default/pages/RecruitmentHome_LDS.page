@@ -3,8 +3,8 @@
     <apex:includeScript value="/lightning/lightning.out.js" />
     
     <script>
-        $Lightning.use("testautonumdata:CandidatesLAppTest", function() {
-          $Lightning.createComponent("testautonumdata:CandidatesLComponent",
+        $Lightning.use("c:CandidatesLAppTest", function() {
+          $Lightning.createComponent("c:CandidatesLComponent",
           "",
           "lightning1",
           function(cmp) {

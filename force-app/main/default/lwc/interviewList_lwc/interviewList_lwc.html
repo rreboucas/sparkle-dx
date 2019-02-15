@@ -1,13 +1,25 @@
 <template>
+    <div class="slds-p-top_none">
     <lightning-card>
-        {headerText}
+            <div class="slds-p-around_medium lgc-bg">
+                    <lightning-tile label={headerText} type="media">
+                        <lightning-icon slot="media" icon-name="action:record"></lightning-icon>
+                        <p class="slds-truncate" title="7 Members">{numReturnedRecords} Records</p>
+                    </lightning-tile>
+                </div>
+        
+                <div slot="footer">
+                        <c-view-source source="lwc/InterviewList" slot="footer">
+                            {getListRecordsIds}
+                        </c-view-source>
+                </div>
+                <p class="slds-p-left_none slds-p-right_none slds-p-horizontal_small">
 
-        {idsReturned}
+        
 
-        <lightning-datatable show-row-number-column data={data} columns={columns} key-field="id" onrowselection={getSelectedId}></lightning-datatable> 
-
-        <c-view-source source="lwc/InterviewList" slot="footer">
-            {getListRecordsIds}
-        </c-view-source>
+         <lightning-datatable show-row-number-column data={data} columns={columns} key-field="id" onrowselection={getSelectedId}></lightning-datatable> 
+</p>
+        
     </lightning-card>
+</div>
 </template>

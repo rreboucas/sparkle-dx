@@ -20,6 +20,11 @@ export default class InterviewList extends LightningElement {
     @api numRecsDisplay;
     @api broadcastFieldName;
     @api showNewRecButton;
+    
+    //@api filterbyFieldName;
+    //@api filterbyFieldValue;
+
+    
     @api
     get filterbyFieldName() {
         if (this._filterbyFieldName === undefined)
@@ -41,6 +46,58 @@ export default class InterviewList extends LightningElement {
     @api column3FieldAPIName;
     @api column4HeaderTxt;
     @api column4FieldAPIName;
+ /*
+
+    @api 
+    get column1HeaderTxt() {
+        if (this.column1HeaderTxt === undefined)
+            return null;
+        return this.column1HeaderTxt;
+    }
+    @api 
+    get column1FieldAPIName() {
+        if (this.column1FieldAPIName === undefined)
+            return null;
+        return this.column1FieldAPIName;
+    }
+    @api 
+    get column2HeaderTxt() {
+        if (this.column2HeaderTxt === undefined)
+            return null;
+        return this.column2HeaderTxt;
+    }
+    @api 
+    get column2FieldAPIName() {
+        if (this.column2FieldAPIName === undefined)
+            return null;
+        return this.column2FieldAPIName;
+    }
+    @api 
+    get column3HeaderTxt() {
+        if (this.column3HeaderTxt === undefined)
+            return null;
+        return this.column3HeaderTxt;
+    }
+    @api 
+    get column3FieldAPIName() {
+        if (this.column3FieldAPIName === undefined)
+            return null;
+        return this.column3FieldAPIName;
+    }
+    @api 
+    get column4HeaderTxt() {
+        if (this.column4HeaderTxt === undefined)
+            return null;
+        return this.column4HeaderTxt;
+    } 
+
+    @api 
+    get column4FieldAPIName() {
+        if (this.column4FieldAPIName === undefined)
+            return null;
+        return this.column4FieldAPIName;
+    }
+*/
     @api showRowActionButton;
     @api sortFieldAPIName;
     @api defaultSortDir;
@@ -54,11 +111,11 @@ export default class InterviewList extends LightningElement {
     @track ldsRecords;
     @track idsReturned;
     @track recordIds;
-    @track retMap;
+    @track numReturnedRecords;
 
 
     recordIds = undefined;
-    
+    numReturnedRecords = 0;
 
     //objectApiName: '$objectName', filter1Field: '$filterbyFieldName', filter1Value: '$filterbyFieldValue'
 
@@ -71,7 +128,7 @@ export default class InterviewList extends LightningElement {
                                     this.apexMessage = undefined;
                                     this.recordIds = data;
                                     logger(true, 'interviewList_lwc', 'this.recordIds', this.recordIds);
-                                    
+                                    this.numReturnedRecords = data.length;
                                 
                                     
                                     

@@ -20,6 +20,12 @@
             ],
             "c/view-source": [
                 "viewSource/viewSource.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/lwc-hello-world": [
+                "lwcHelloWorld/lwcHelloWorld.js"
             ]
         }
     },

@@ -1,0 +1,18 @@
+<apex:page>
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:AuraLWCWrapperApp", function() {
+          $Lightning.createComponent("c:AuraWrapperComponent",
+              {  },
+              "lightning",
+              function(cmp) {
+                console.log("button was created");
+                // do some stuff
+              }
+          );
+        });
+    </script>
+</apex:page>
