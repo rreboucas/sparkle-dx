@@ -9,5 +9,8 @@ sfdx force:user:permset:assign -n Lightning_Components_Sample_Pack_Recruiting
 
 sfdx force:data:tree:import --plan sfdx-out/plan.json
 
+//Run Apex commands as needed
+sfdx force:apex:execute -f config/create-demo-data-setup.apex
+
 sfdx force:org:open
 
