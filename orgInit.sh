@@ -7,7 +7,7 @@ sfdx force:source:push
 
 sfdx force:user:permset:assign -n Lightning_Components_Sample_Pack_Recruiting
 
-sfdx force:data:tree:import --plan sfdx-out/plan.json 
+sfdx force:data:tree:import --plan sfdx-out/plan.json
 
 sfdx force:org:open
 
