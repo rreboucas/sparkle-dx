@@ -1,3 +1,3 @@
 import { LightningElement } from 'lwc';
 
-export default class InterviewList extends LightningElement {}
+export default class interviewList extends LightningElement {}
