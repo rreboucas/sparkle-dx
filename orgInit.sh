@@ -4,7 +4,7 @@
 sfdx force:org:create -f config/project-scratch-def.json -a FSCADK2 --setdefaultusername -d 1
 
 #install pckg for sample loginflows 
-sfdx force:package:install --package 3D04to0000000WA6J -w 20
+sfdx force:package:install --package 04to0000000WA6J -w 20
 
 
 sfdx force:source:push 
