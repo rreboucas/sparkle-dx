@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <interviewLabel>WelcomeLoginFlow {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>WelcomeLoginFlow</label>
+    <interviewLabel>WelcomeLogin {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WelcomeLogin</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -18,11 +18,11 @@
     <recordLookups>
         <name>GetUser</name>
         <label>GetUser</label>
-        <locationX>171</locationX>
-        <locationY>48</locationY>
+        <locationX>198</locationX>
+        <locationY>34</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Welcome</targetReference>
+            <targetReference>Welcome_Screen</targetReference>
         </connector>
         <filters>
             <field>Id</field>
@@ -32,26 +32,27 @@
             </value>
         </filters>
         <object>User</object>
+        <outputReference>user</outputReference>
         <queriedFields>Id</queriedFields>
         <queriedFields>Phone</queriedFields>
     </recordLookups>
     <recordUpdates>
-        <name>UpdateUser</name>
-        <label>UpdateUser</label>
-        <locationX>422</locationX>
-        <locationY>44</locationY>
+        <name>Update_User</name>
+        <label>Update User</label>
+        <locationX>448</locationX>
+        <locationY>39</locationY>
         <inputReference>user</inputReference>
     </recordUpdates>
     <screens>
-        <name>Welcome</name>
-        <label>Welcome</label>
-        <locationX>306</locationX>
-        <locationY>48</locationY>
+        <name>Welcome_Screen</name>
+        <label>Welcome Screen</label>
+        <locationX>340</locationX>
+        <locationY>33</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>UpdateUser</targetReference>
+            <targetReference>Update_User</targetReference>
         </connector>
         <fields>
             <name>Phone</name>
@@ -60,7 +61,7 @@
             <inputParameters>
                 <name>value</name>
                 <value>
-                    <elementReference>GetUser.Phone</elementReference>
+                    <elementReference>user.Phone</elementReference>
                 </value>
             </inputParameters>
             <isRequired>true</isRequired>
