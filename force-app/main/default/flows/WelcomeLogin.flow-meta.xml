@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>If_True</name>
+        <label>If True</label>
+        <locationX>452</locationX>
+        <locationY>51</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_True2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>TrueVar</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Snooze_Until</targetReference>
+            </connector>
+            <label>If True</label>
+        </rules>
+    </decisions>
     <interviewLabel>WelcomeLogin {!$Flow.CurrentDateTime}</interviewLabel>
     <label>WelcomeLogin</label>
     <processMetadataValues>
@@ -34,29 +56,98 @@
         <object>User</object>
         <outputReference>user</outputReference>
         <queriedFields>Id</queriedFields>
-        <queriedFields>Phone</queriedFields>
     </recordLookups>
     <screens>
         <name>New_Feature_Update</name>
         <label>New Feature Update</label>
-        <locationX>302</locationX>
-        <locationY>33</locationY>
+        <locationX>301</locationX>
+        <locationY>46</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>If_True</targetReference>
+        </connector>
+        <fields>
+            <name>Update</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;Brand new feature just rolled out!&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Check out how you can send a candidate an&lt;b&gt; offer letter &lt;u&gt;directly&lt;/u&gt; from the candidate record.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;In app guidance will be there to help you navigate the new feature.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://test.com&quot; target=&quot;_blank&quot;&gt;Feature Release Notes&lt;/a&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Snooze</name>
+            <extensionName>flowruntime:toggle</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Do you want to snooze this notification?</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleActive</name>
+                <value>
+                    <stringValue>Yes</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleInactive</name>
+                <value>
+                    <stringValue>No </stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>TrueVar</assignToReference>
+                <name>value</name>
+            </outputParameters>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Snooze_Until</name>
+        <label>Snooze Until</label>
+        <locationX>591</locationX>
+        <locationY>72</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <fields>
-            <name>Update</name>
-            <fieldText>&lt;p&gt;New feature update! &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Check out the newest functionality in your org. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Send an offer to a candidate right from the candidate record, just a few clicks and in minutes! &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Our in app guidance will show you how. &lt;b&gt;Just navigate to a candidate record! &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://test.com&quot; target=&quot;_blank&quot;&gt;Winter &#39;20 Release Notes &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
+            <name>Remind_me</name>
+            <dataType>DateTime</dataType>
+            <fieldText>Remind me:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <startElementReference>GetUser</startElementReference>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>LoginFlow_UserId</name>
         <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TrueV</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>TrueVar</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TrueVar2</name>
+        <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
