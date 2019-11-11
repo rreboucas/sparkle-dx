@@ -18,11 +18,11 @@
     <recordLookups>
         <name>GetUser</name>
         <label>GetUser</label>
-        <locationX>198</locationX>
-        <locationY>34</locationY>
+        <locationX>178</locationX>
+        <locationY>39</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Welcome_Screen</targetReference>
+            <targetReference>New_Feature_Update</targetReference>
         </connector>
         <filters>
             <field>Id</field>
@@ -36,41 +36,24 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Phone</queriedFields>
     </recordLookups>
-    <recordUpdates>
-        <name>Update_User</name>
-        <label>Update User</label>
-        <locationX>448</locationX>
-        <locationY>39</locationY>
-        <inputReference>user</inputReference>
-    </recordUpdates>
     <screens>
-        <name>Welcome_Screen</name>
-        <label>Welcome Screen</label>
-        <locationX>340</locationX>
+        <name>New_Feature_Update</name>
+        <label>New Feature Update</label>
+        <locationX>302</locationX>
         <locationY>33</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
-        <connector>
-            <targetReference>Update_User</targetReference>
-        </connector>
         <fields>
-            <name>Phone</name>
-            <extensionName>flowruntime:phone</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>value</name>
-                <value>
-                    <elementReference>user.Phone</elementReference>
-                </value>
-            </inputParameters>
-            <isRequired>true</isRequired>
+            <name>Update</name>
+            <fieldText>&lt;p&gt;New feature update! &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Check out the newest functionality in your org. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Send an offer to a candidate right from the candidate record, just a few clicks and in minutes! &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Our in app guidance will show you how. &lt;b&gt;Just navigate to a candidate record! &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://test.com&quot; target=&quot;_blank&quot;&gt;Winter &#39;20 Release Notes &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <startElementReference>GetUser</startElementReference>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>LoginFlow_UserId</name>
         <dataType>String</dataType>
