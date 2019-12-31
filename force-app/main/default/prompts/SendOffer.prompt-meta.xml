@@ -5,18 +5,19 @@
         <actionButtonLabel>Interviewer Console</actionButtonLabel>
         <actionButtonLink>/lightning/n/Interviewer_Console</actionButtonLink>
         <body>Send this candidate an &lt;b&gt;offer&lt;/b&gt; via email, using this Send Offer feature!&lt;br /&gt; Or head to the interview console!</body>
-        <!--<customApplication>02u26000000En61</customApplication>-->
+        <customApplication>02u26000000En61</customApplication>
         <delayDays>1</delayDays>
         <dismissButtonLabel>Got it!</dismissButtonLabel>
         <displayPosition>TopRight</displayPosition>
         <displayType>FloatingPanel</displayType>
         <isPublished>true</isPublished>
         <masterLabel>Send Offer</masterLabel>
-        <!--<publishedByUser>00526000004e64a</publishedByUser>-->
-        <!--<publishedDate>2019-11-12</publishedDate>-->
+        <publishedByUser>00526000004e64a</publishedByUser>
+        <publishedDate>2019-11-12</publishedDate>
         <shouldDisplayActionButton>true</shouldDisplayActionButton>
         <startDate>2019-11-12</startDate>
         <targetAppDeveloperName>Recruitment</targetAppDeveloperName>
+        <targetAppNamespacePrefix></targetAppNamespacePrefix>
         <targetPageKey1>Candidate__c</targetPageKey1>
         <targetPageKey2>view</targetPageKey2>
         <targetPageType>standard__recordPage</targetPageType>
