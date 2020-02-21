@@ -1,0 +1,13 @@
+{
+    "Username": "pkodemo@sparkle.org",
+    "LastName": "Partner",
+    "Email": "rreboucas@salesforce.com",
+    "Alias": "tst1313",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "System Administrator",
+    "permsets": ["Lightning_Components_Sample_Pack_Recruiting"],
+    "generatePassword": true
+}

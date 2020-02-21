@@ -1,7 +1,11 @@
 #!/bin/bash
 
-#create scratch org
-sfdx force:org:create -f config/project-scratch-def.json -a FSCADK2 --setdefaultusername -d 1
+
+sfdx force:org:create -f config/project-scratch-def.json -a SparkleADK --setdefaultusername -d 30
+
+#install pckg for sample loginflows 
+sfdx force:package:install --package 04to0000000WA6J -w 20
+
 
 sfdx force:source:push 
 

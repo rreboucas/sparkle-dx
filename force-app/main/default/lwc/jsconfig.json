@@ -6,10 +6,13 @@
             "c/dynamiclist_listview": [
                 "dynamiclist_listview/dynamiclist_listview.js"
             ],
-            "c/interview-list_lwc": [
+            "c/interviewList": [
+                "interviewList/interviewList.js"
+            ],
+            "c/interviewList_lwc": [
                 "interviewList_lwc/interviewList_lwc.js"
             ],
-            "c/view-source": [
+            "c/viewSource": [
                 "viewSource/viewSource.js"
             ]
         }
@@ -17,5 +20,10 @@
     "include": [
         "**/*",
         "../../../../.sfdx/typings/lwc/**/*.d.ts"
-    ]
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
 }

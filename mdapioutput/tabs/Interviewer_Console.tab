@@ -3,6 +3,6 @@
     <description>Created by Lightning App Builder</description>
     <flexiPage>Interviewer_Console</flexiPage>
     <label>Interviewer Console</label>
-    <mobileReady>false</mobileReady>
+    
     <motif>Custom5: Leaf</motif>
 </CustomTab>
