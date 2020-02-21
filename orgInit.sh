@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#create scratch org
+
 sfdx force:org:create -f config/project-scratch-def.json -a SparkleADK --setdefaultusername -d 30
 
 #install pckg for sample loginflows 
